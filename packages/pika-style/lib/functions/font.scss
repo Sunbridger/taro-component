@@ -1,0 +1,6 @@
+/**
+搜车行间距计算法: 字体大小 + 8px
+ */
+@function lineHeight($fontSize, $addBase: 8px) {
+    @return $fontSize + $addBase;
+}

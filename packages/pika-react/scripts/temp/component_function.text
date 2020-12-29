@@ -1,0 +1,8 @@
+import React from 'react';
+// import Taro from '@tarojs/taro';
+import { View } from '@tarojs/components';
+import { I_componentName_Props } from './interface.d';
+
+export default function Pk_ComponentName_(props: I_componentName_Props): JSX.Element {
+    return <View className='pk_ComponentName_'>Pk_ComponentName_ show</View>;
+}

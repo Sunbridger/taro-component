@@ -1,0 +1,46 @@
+.ui_list {
+    padding: 0 20px;
+    &_header {
+        height: 120px;
+        .icon {
+            margin: 0 auto;
+            width: 200px;
+            height: 100px;
+            background-image: url("//img.souche.com/f2e/9dbff6eeaf0597f7f6306b5656bc950a.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+    }
+    &_body {
+        height: calc(100vh - 120px);
+        padding-bottom: 20px;
+    }
+    &_content {
+        position: relative;
+        top:0;
+        margin-bottom: 20px;
+        &_title {
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            margin-bottom: 20px;
+            padding: 10px 0;
+            font-size: 32px;
+            background-color: #fff;
+            &_icon {
+                margin-right: 20px;
+                height: 50px;
+                width: 50px;
+                background-size: contain;
+                background-position: center;
+            }
+        }
+    }
+    &_btn {
+        margin-bottom: 40px;
+        color: #626262;
+    }
+}

@@ -1,0 +1,68 @@
+{
+	"name": "@souche/pika-demo-vue",
+	"private": true,
+	"version": "1.0.3-alpha.8",
+	"description": "pika-vue 组件库演示案例",
+	"author": "Souche Taro team",
+	"templateInfo": {
+		"name": "default",
+		"typescript": true,
+		"css": "sass"
+	},
+	"publishConfig": {
+		"registry": "http://registry.npm.souche-inc.com/"
+	},
+	"scripts": {
+		"build:weapp": "./node_modules/.bin/taro build --type weapp",
+		"build:swan": "./node_modules/.bin/taro build --type swan",
+		"build:alipay": "./node_modules/.bin/taro build --type alipay",
+		"build:tt": "./node_modules/.bin/taro build --type tt",
+		"build:h5": "./node_modules/.bin/taro build --type h5",
+		"build:rn": "./node_modules/.bin/taro build --type rn",
+		"build:qq": "./node_modules/.bin/taro build --type qq",
+		"build:jd": "./node_modules/.bin/taro build --type jd",
+		"build:quickapp": "./node_modules/.bin/taro build --type quickapp",
+		"dev:weapp": "npm run build:weapp -- --watch",
+		"dev:swan": "npm run build:swan -- --watch",
+		"dev:alipay": "npm run build:alipay -- --watch",
+		"dev:tt": "npm run build:tt -- --watch",
+		"dev:h5": "npm run build:h5 -- --watch",
+		"dev:rn": "npm run build:rn -- --watch",
+		"dev:qq": "npm run build:qq -- --watch",
+		"dev:jd": "npm run build:jd -- --watch",
+		"dev:quickapp": "npm run build:quickapp -- --watch",
+		"new": "node ./script/new",
+		"dev": "yarn link @souche/pika-vue &&  yarn dev:alipay"
+	},
+	"browserslist": [
+		"last 3 versions",
+		"Android >= 4.1",
+		"ios >= 8"
+	],
+	"dependencies": {
+		"@babel/runtime": "^7.7.7",
+		"@souche/pika-vue": "^0.1.0",
+		"@tarojs/components": "3.0.17",
+		"@tarojs/runtime": "3.0.17",
+		"@tarojs/taro": "3.0.17",
+		"vue": "^2.6.12",
+		"vue-template-compiler": "^2.6.12"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.8.0",
+		"@tarojs/cli": "3.0.17",
+		"@tarojs/mini-runner": "3.0.17",
+		"@tarojs/webpack-runner": "3.0.17",
+		"@types/webpack-env": "^1.13.6",
+		"@typescript-eslint/eslint-plugin": "^2.x",
+		"@typescript-eslint/parser": "^2.x",
+		"babel-preset-taro": "3.0.17",
+		"eslint": "^6.8.0",
+		"eslint-config-taro": "3.0.17",
+		"eslint-plugin-vue": "^6.x",
+		"inquirer": "^7.3.3",
+		"stylelint": "9.3.0",
+		"typescript": "^3.7.0",
+		"vue-loader": "^15.9.2"
+	}
+}

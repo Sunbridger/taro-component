@@ -1,0 +1,76 @@
+@import './util.scss';
+
+@function rgb2hsv($color) {
+    $R: red($color) / 255;
+    $G: green($color) / 255;
+    $B: blue($color) / 255;
+
+    $max: max($R, $G, $B);
+    $min: min($R, $G, $B);
+
+    $hue: 0;
+    $delta: $max - $min;
+
+    @if $min == $max {
+        $hue: 0;
+    } @else if $max == $R {
+        $hue: 60 * ($G - $B) / $delta;
+    } @else if $max == $G {
+        $hue: 60 * ($B - $R) / $delta + 120;
+    } @else if $max == $B {
+        $hue: 60 * ($R - $G) / $delta + 240;
+    }
+
+    @if $hue < 0 {
+        $hue: $hue + 360;
+    }
+
+    @return (
+        'h': round($hue),
+        's': toFix2(if($max==0, 0, $delta/$max)),
+        'v': toFix2($max)
+    );
+}
+
+@function hsv2rgb($hsv) {
+    $C: map-get($hsv, 's');
+    $_H: map-get($hsv, 'h') / 60;
+    $V: map-get($hsv, 'v');
+    $X: $C * (1 - abs($_H % 2 - 1));
+
+    $R: 0;
+    $G: 0;
+    $B: 0;
+
+    @if 0 <= $_H and $_H < 1 {
+        $R: $C;
+        $G: $X;
+        $B: 0;
+    } @else if 1 <= $_H and $_H < 2 {
+        $R: $X;
+        $G: $C;
+        $B: 0;
+    } @else if 2 <= $_H and $_H < 3 {
+        $R: 0;
+        $G: $C;
+        $B: $X;
+    } @else if 3 <= $_H and $_H < 4 {
+        $R: 0;
+        $G: $X;
+        $B: $C;
+    } @else if 4 <= $_H and $_H < 5 {
+        $R: $X;
+        $G: 0;
+        $B: $C;
+    } @else if 5 <= $_H and $_H < 6 {
+        $R: $C;
+        $G: 0;
+        $B: $X;
+    }
+
+    @return rgb(
+        ($R + $V - $C) * 255,
+        ($G + $V - $C) * 255,
+        ($B + $V - $C) * 255
+    );
+}

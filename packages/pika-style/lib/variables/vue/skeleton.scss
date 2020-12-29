@@ -1,0 +1,15 @@
+@import '../default.scss';
+
+$pk-skeleton-linear-color-normal: #f2f2f2;
+$pk-skeleton-linear-color-middle: #e6e6e6;
+$pk-skeleton-linear-deg: 90deg;
+$pk-skeleton-background-size: 400% 100%;
+$pk-skeleton-animation-time: 1.4s;
+$pk-skeleton-normal-height: 32px;
+
+$pk-skeleton-bgc: linear-gradient(
+    $pk-skeleton-linear-deg,
+    $pk-skeleton-linear-color-normal 25%,
+    $pk-skeleton-linear-color-middle 37%,
+    $pk-skeleton-linear-color-normal 63%
+) !default;

@@ -1,0 +1,33 @@
+@import '../common/varibles.scss';
+@import '@souche/pika-style/lib/variables/vue/badge.scss';
+
+.pk-badge {
+    position: relative;
+    display: inline-block;
+
+    &__dot {
+        position: absolute;
+        width: $pk-badge-dot-size;
+        height: $pk-badge-dot-size;
+        border-radius: $pk-badge-dot-size / 2;
+        top: 0;
+        right: -4px;
+        background-color: $color-theme-main;
+        padding: 0;
+        z-index: $zindex-badge;
+    }
+
+    &__norm {
+        position: absolute;
+        height: $pk-badge-dot-value-size;
+        line-height: $pk-badge-dot-value-size;
+        font-size: $pk-badge-font-size;
+        padding: 0 $pk-badge-padding;
+        color: #fff;
+        border-radius: $pk-badge-border-radius;
+        background-color: $color-theme-main;
+        top: -8px;
+        left: 90%;
+        z-index: $zindex-badge;
+    }
+}

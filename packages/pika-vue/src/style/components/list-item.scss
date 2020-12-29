@@ -1,0 +1,82 @@
+@import '@souche/pika-style/lib/variables/vue/list-item.scss';
+@import '../common/common.scss';
+
+.pk-list-item {
+    font-size: $pk-list-item__font-size;
+    padding: $pk-list-item__padding-vertial $pk-list-item__padding-align;
+    position: relative;
+    // 不要修改这里
+    color: $pk-list-item__font-color;
+
+    justify-content: space-between;
+    display: flex;
+
+    // status
+    &--border {
+        @extend .border--bottom;
+    }
+
+    &--disabled {
+        @extend .disable;
+    }
+
+    // left block
+    &__left {
+        flex-grow: 0;
+        flex-shrink: 1;
+        margin-right: 32px;
+        min-width: 4em;
+        @extend .ellipsis;
+        vertical-align: middle;
+
+        .pk-list-item__left_icon {
+            width: $pk-list-item__icon-size;
+            height: $pk-list-item__icon-size;
+            position: absolute;
+        }
+
+        .pk-list-item__title {
+            font-size: $pk-list-item__font-size;
+            @extend .ellipsis;
+            &--offset {
+                margin-left: $pk-list-item__icon-size + 16px;
+            }
+        }
+
+        .pk-list-item__note {
+            font-size: $pk-list-item__font-size--sed;
+            color: $pk-list-item__font-color--sed;
+            margin-top: 20px;
+            @extend .ellipsis;
+            &--offset {
+                margin-left: $pk-list-item__icon-size + 16px;
+            }
+        }
+    }
+
+    // right block
+    &__right {
+        flex-grow: 0;
+        flex-shrink: 1;
+        text-align: right;
+        @extend .ellipsis;
+
+        .pk-list-item__extra-text {
+            color: $pk-list-item__font-color--sed;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            @extend .ellipsis;
+            &--offset {
+                margin-right: 40px;
+            }
+        }
+
+        .pk-list-item__right-icon {
+            position: absolute;
+            right: 32px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}

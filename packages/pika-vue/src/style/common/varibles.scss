@@ -1,0 +1,88 @@
+@import './color.scss';
+
+/**
+ * 全局变量参数
+ */
+$hd: 2; /* 基本单位 */
+
+/* 主题色 */
+$color-primary: $color-red-6 !default; /* 主题色 */
+$color-warning: $color-red-6 !default; /* 警告色 */
+$color-warning-back: #fef2f2 !default; /* 警告背景色 */
+$color-success: #1dbf6e !default; /* 安全色 */
+$color-link: #2c7ff7 !default; /* 链接色 */
+$color-default: #f2f3f5 !default; /* 次要色 */
+$color-label-stroke: #f78e91; /* 边框色 */
+
+/* 文本 */
+$color-text-title: #000000 !default; /* 标题 */
+$color-text-body: #5e5e66 !default; /* 正文 */
+$color-text-caption: #8d8e99 !default; /* 辅助文字 */
+$color-text-hint: #b0b1b8 !default; /* 预输入文字, 模块分割线 */
+$color-text-anti: #ffffff !default; /* 反白文字 */
+
+/* 字体大小 */
+$font-size-super: 24px * $hd !default;
+$font-size-big: 20px * $hd !default;
+$font-size-xxl: 18px * $hd !default;
+$font-size-xl: 16px * $hd !default;
+$font-size-l: 15px * $hd !default;
+$font-size-m: 14px * $hd !default;
+$font-size-s: 12px * $hd !default;
+$font-size-xs: 10px * $hd !default;
+
+/* 行高 */
+$line-height-normal: 1 !default;
+$line-height-en: 1.3 !default;
+$line-height-base: 1.5 !default;
+
+/* 背景 */
+$color-back-normal: #f7f8fa !default; /* 常规背景色, 占位符 */
+$color-back-stroke: #e3e3e6 !default; /* press/置灰/卡片描边 */
+$color-back-line: #ededf0 !default; /* 分割线 */
+$color-back-mask: rgba(#000, 0.6) !default; /* 蒙层 */
+
+/* 圆角 */
+$border-radius-sm: 8px !default;
+$border-radius-normal: 12px !default;
+$border-radius-md: 16px !default;
+$border-radius-lg: 24px !default;
+$border-radies-circle: 50% !default;
+
+/* z-index */
+$zIndex-table-fixed: auto !default;
+$zindex-badge: 10 !default;
+$zindex-affix: 10 !default;
+$zindex-back-top: 10 !default;
+$zindex-picker-panel: 10 !default;
+$zindex-popup-close: 10 !default;
+$zindex-modal: 1000 !default;
+$zindex-modal-mask: 1000 !default;
+$zindex-message: 1010 !default;
+$zindex-notification: 1010 !default;
+$zindex-popover: 1030 !default;
+$zindex-dropdown: 1050 !default;
+$zindex-picker: 1050 !default;
+$zindex-popoconfirm: 1060 !default;
+$zindex-tooltip: 1070 !default;
+
+/* Animation */
+$animation-duration-slow: 0.3s;
+$animation-duration-base: 0.2s;
+$animation-duration-fast: 0.1s;
+
+/* 阴影 */
+$box-shadow--normal: 0 2px 16px rgba(#000, 0.8);
+
+/* 块 */
+$box-padding--normal: 0 32px 24px;
+$box-padding--center: 12px 32px;
+
+/* 图标 */
+$icon-size--normal: 48px;
+
+/* padding */
+$box-padding-sm: 16px;
+$box-padding-md: 32px;
+$box-padding-lg: 64px;
+$pk-common-padding-normal: 36px 32px;

@@ -1,0 +1,56 @@
+@import '../common/varibles.scss';
+@import '@souche/pika-style/lib/variables/vue/fab.scss';
+
+.pk-fab {
+    position: fixed;
+    padding: 0;
+    width: $pk-fab-size;
+    height: $pk-fab-size;
+    // line-height: $pk-fab-size;
+    text-align: center;
+    color: $color-black-0;
+    font-size: $font-size-m;
+    text-align: center;
+    border-radius: $border-radius-circle;
+    background: $color-white;
+    box-shadow: $pk-fab-box-shadow;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+    &:active {
+        background: $pk-fab-box-background;
+        box-shadow: $shadow-deep;
+    }
+
+    /* modifiers */
+    &-small {
+        width: $pk-fab-size-sm;
+        height: $pk-fab-size-sm;
+        line-height: $pk-fab-size-sm;
+    }
+    &-bottomRight {
+        bottom: 0;
+        right: 0;
+    }
+    &-bottom {
+        bottom: 0;
+    }
+    &-top {
+        top: 0;
+    }
+    &-topRight {
+        top: 0;
+        right: 0;
+    }
+    &-topLeft {
+        top: 0;
+        left: 0;
+    }
+    &-bottomLeft {
+        bottom: 0;
+        left: 0;
+    }
+}

@@ -1,0 +1,89 @@
+@import '../common/varibles.scss';
+@import '@souche/pika-style/lib/variables/vue/nav-bar.scss';
+
+
+.pk-nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  //   background-color: #fff;
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+
+    /* elements */
+    &__left-view {
+      display: flex;
+      padding: $pk-nav-bar-spacing-v $pk-nav-bar-spacing-h;
+      color: $pk-nav-bar-link-color;
+      font-size: $pk-nav-bar-font-size;
+      text-align: left;
+      text-overflow: ellipsis;
+      overflow: hidden;
+
+      .pk-icon {
+        font-size: $font-size-super;
+      }
+    }
+
+    &__right-view {
+      height: 100%;
+      color: $pk-nav-bar-link-color;
+      text-align: right;
+      overflow: hidden;
+    }
+
+    &__title {
+      flex: 5;
+      color: $pk-nav-bar-title-color;
+      font-size: $pk-nav-bar-font-size;
+      text-align: center;
+      vertical-align: middle;
+      line-height: $line-height-base;
+    }
+
+    &__text {
+      display: inline-block;
+      padding-left: $pk-nav-bar-spacing-h;
+      height: 100%;
+      font-size: $pk-nav-bar-back-font-size;
+      vertical-align: middle;
+      line-height: $line-height-base;
+    }
+
+    &__container {
+      display: inline-block;
+      padding: $pk-nav-bar-spacing-v $pk-nav-bar-spacing-h;
+      width: 50%;
+      height: 100%;
+      font-size: $pk-nav-bar-font-size;
+      text-align: center;
+      box-sizing: border-box;
+
+      .pk-icon {
+        font-size: $font-size-super;
+      }
+
+      &--hide {
+        display: inline-block;
+        visibility: hidden;
+      }
+    }
+
+    /* modifiers */
+    &--no-border {
+      &::after {
+        border-bottom-width: 0;
+      }
+    }
+
+    &--fixed {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: $zIndex-nav;
+    //   padding-top: 40px;
+    }
+}

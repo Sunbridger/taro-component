@@ -1,0 +1,22 @@
+{
+  "name": "@souche/pika-style",
+  "version": "0.1.0",
+  "description": "Pika组件库通用样式",
+  "author": "Souche Taro team",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/index.scss",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "http://registry.npm.souche-inc.com/"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  }
+}

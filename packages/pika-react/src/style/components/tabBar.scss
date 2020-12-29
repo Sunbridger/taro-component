@@ -1,0 +1,80 @@
+.pkTabBar {
+    padding: 12px 0;
+    width: 100%;
+    height: 80px;
+    line-height: 1;
+    background-color: #fff;
+    &.isIpx {
+        padding-bottom: 78px;
+    }
+    &.fixed {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+    &.shadow {
+        box-shadow: $shadow-shallow;
+    }
+    &-normalLayout {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    &-HumpLayout {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        &_middle {
+            width: 112px;
+            height: 112px;
+            position: relative;
+            &-item {
+                position: absolute;
+                top: -50%;
+                left: 0;
+                box-sizing: border-box;
+                transform: translateY(-12px);
+                padding: 8px;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background-color: $color-grey-5;
+                line-height: 104px;
+                text-align: center;
+                &-content {
+                    width: 100%;
+                    height: 100%;
+                    background-image: linear-gradient(120deg, #FF636E, #FF3441);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    border-radius: 50%;
+                    color: $color-grey-5;
+                    font-size: $font-size-s;
+                    box-shadow: 9px 7px 10px rgba(255, 54, 67, 0.24);
+                }
+            }
+
+        }
+    }
+    &-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-name {
+            font-size: $font-size-xs;
+            font-weight: bold;
+            &.noIcon {
+                font-size: $font-size-xl;
+            }
+            &.active {
+                font-weight: bold;
+                color: $color-theme-main;
+            }
+        }
+        &-icon {
+            line-height: 1;
+            position: relative;
+        }
+    }
+}

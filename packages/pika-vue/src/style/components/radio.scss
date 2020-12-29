@@ -1,0 +1,37 @@
+@import '@souche/pika-style/lib/variables/vue/radio.scss';
+
+.pk-radio {
+    .selected {
+        color: $pk-radio__selected-color;
+        .pk-list-item__note {
+            color: lighten($pk-radio__selected-color, 15);
+        }
+    }
+
+    .disabled {
+        filter: grayscale(1);
+    }
+
+    .pk-radio__pre-icon {
+        top: 50% !important;
+        transform: translateY(-50%);
+        margin-top: 5px;
+        &--selected {
+            color: $pk-radio__selected-color !important;
+        }
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        &--disabled {
+            filter: grayscale(1);
+        }
+
+        .pk-radio__selected-icon {
+            color: $pk-radio__selected-color !important;
+        }
+    }
+}

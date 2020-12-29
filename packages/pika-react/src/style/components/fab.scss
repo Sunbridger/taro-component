@@ -1,0 +1,30 @@
+.pk-fab {
+    width: 96px;
+    height: 96px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    box-shadow: $px-fab-box-shadow;
+    box-sizing: border-box;
+    border-radius: 48px;
+    background-color: $color-grey-5;
+    line-height: 1;
+    font-size: 20px;
+    color: $color-black-1;
+    z-index: $zIndex-fab;
+    .icon {
+        margin-bottom: 2px;
+        font-size: 48px;
+        color: $color-black-1;
+    }
+    &-pressed {
+        background-image: linear-gradient(
+            rgba($color-black-0, 0.2),
+            rgba($color-black-0, 0.2)
+        );
+    }
+}

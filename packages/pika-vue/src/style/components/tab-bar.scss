@@ -1,0 +1,70 @@
+@import '../common/varibles.scss';
+@import '@souche/pika-style/lib/variables/vue/tab-bar.scss';
+
+
+.pk-tab-bar {
+    .at-tab-bar {
+    display: flex;
+    padding: $space-base 0 $spacing-v-xs;
+    width: 100%;
+    min-height: $at-tab-bar-min-height;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: $at-tab-bar-bg-color;
+
+    /* elements */
+    &__item {
+        flex: 1;
+        padding: $space-base $space-base;
+        color: $at-tab-bar-color;
+        font-size: 0;
+        transition: all 0.2s;
+
+        &--active {
+        color: $at-tab-bar-color-active;
+        }
+    }
+
+    &__icon {
+        font-size: $at-tab-bar-icon-font-size;
+        line-height: 1;
+    }
+
+    &__inner-img {
+        width: $at-tab-bar-icon-image-size;
+        height: $at-tab-bar-icon-image-size;
+
+        &--inactive {
+        display: none;
+        }
+    }
+
+    &__title {
+        display: block;
+        padding: $spacing-v-xs 0;
+        max-width: $at-tab-bar-title-max-width;
+        font-size: $at-tab-bar-font-size;
+        line-height: 1.5;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* modifiers */
+    &--fixed {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: $zIndex-nav;
+    }
+
+    &--ipx {
+        &.at-tab-bar--fixed {
+            padding-bottom: $at-tab-bar--fixed;
+        }
+    }
+    }
+}

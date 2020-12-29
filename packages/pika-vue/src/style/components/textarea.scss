@@ -1,0 +1,62 @@
+@import '@souche/pika-style/lib/variables/vue/textarea.scss';
+
+.pk-textarea {
+    padding: $pk-textarea__margin;
+    // 提示信息
+    .pk-textarea__tip {
+        padding: $pk-textarea__tip-padding;
+    }
+
+    // 字数统计
+    .pk-textarea__content {
+        background-color: $pk-textarea__content-back;
+        width: 100%;
+        border-radius: $pk-textarea__content-raduis;
+        padding: $pk-textarea__padding;
+        box-sizing: border-box;
+
+        &--disabled {
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(#fff, 0.65);
+                z-index: 10;
+            }
+        }
+
+        &--nocount {
+            padding: $pk-textarea__padding--nocount;
+        }
+
+        // FIXME
+        .pk-count-coverset {
+            height: 20px;
+        }
+    }
+
+    .pk-textarea__textarea {
+        font-size: $pk-textarea__font-size;
+        line-height: $pk-textarea__line-height;
+        color: $pk-textarea__font-color;
+        background-color: $pk-textarea__content-back;
+        .taro-textarea {
+            background-color: $pk-textarea__content-back;
+        }
+    }
+
+    .pk-textarea__placeholder {
+        color: $pk-textarea__place-color;
+    }
+
+    .pk-textarea__count {
+        text-align: right;
+        font-size: $pk-textarea__count-size;
+        color: $pk-textarea__font-color;
+        padding: $pk-textarea__count-padding;
+    }
+}

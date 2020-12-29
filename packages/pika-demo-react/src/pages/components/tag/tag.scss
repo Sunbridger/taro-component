@@ -1,0 +1,33 @@
+.test-class {
+    background: red;
+}
+.container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    .pk-tag {
+        margin: 0 20px 20px 0;
+    }
+    .test-tag {
+        height: 30px;
+        padding: 0 8px;
+        font-size: 20px;
+        box-sizing: border-box;
+    }
+    .test-tag1 {
+        height: 32px;
+        padding: 0 16px;
+        font-size: 20px;
+        color: #B75700;
+        background-color: #FFF6D1;
+        border: none;
+    }
+}
+.flexable {
+    .pk-tag {
+        width: calc((100% - 40px)/3);
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+    }
+}

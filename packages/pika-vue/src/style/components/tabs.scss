@@ -1,0 +1,70 @@
+@import '@souche/pika-style/lib/variables/vue/tabs.scss';
+
+.pk-tabs {
+    .pk-tabs__scroll {
+        width: auto;
+    }
+
+    .pk-tabs__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+
+        .pk-tabs__list-item {
+            font-size: $pk-tabs__tab-font-size;
+            color: $pk-tabs__tab-font-color;
+            white-space: nowrap;
+            text-align: center;
+            margin: $pk-tabs__tab-margin;
+
+            &--selected {
+                color: $pk-tabs__tab-font-color--selected;
+            }
+        }
+
+        .pk-tabs__underline {
+            position: absolute;
+            height: 6px;
+            border-radius: 3px;
+            bottom: 0;
+            left: 0;
+            background-color: $pk-tabs__primary-color;
+            transition: all 0.2s;
+        }
+    }
+
+    &--vertical {
+        display: flex;
+        align-items: stretch;
+
+        .pk-tabs__scroll--vertical {
+            width: auto;
+            flex-shrink: 0;
+        }
+
+        .pk-tabs__list {
+            flex-direction: column;
+
+            .pk-tabs__list-item {
+                margin: $pk-tabs__tab-margin--vertical;
+            }
+
+            .pk-tabs__underline--vertical {
+                position: absolute;
+                width: 6px;
+                border-radius: 3px;
+                top: 0;
+                right: 0;
+                height: $pk-tabs__tab-vertical__height;
+                background-color: $pk-tabs__primary-color;
+                transition: all 0.2s;
+            }
+        }
+
+        .pk-tabs__content {
+            width: 100%;
+            display: flex;
+        }
+    }
+}

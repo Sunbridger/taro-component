@@ -1,0 +1,44 @@
+@import '@souche/pika-style/lib/variables/vue/notice.scss';
+
+.pk-notice {
+    background-color: $color-red-5;
+    border-radius: $border-radius-sp;
+    font-size: $font-size-s;
+    color: $color-theme-main;
+    padding: $pk-notice-padding;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-tip-icon {
+        width: $pk-notice-icon-size;
+        height: $pk-notice-icon-size;
+        margin: $pk-notice-icon-margin;
+    }
+    &-right-btn-box {
+        min-width: $pk-notice-right-box-min-width;
+    }
+    &-scroll-box {
+        flex: 1;
+        overflow: hidden;
+        display: flex;
+        margin-right: 20px;
+    }
+    &-marquee {
+        margin-top: auto;
+        white-space: nowrap;
+        -webkit-animation: marquee $pk-notice-animation-time linear infinite;
+        animation: marquee $pk-notice-animation-time linear infinite;
+        @keyframes marquee {
+            0% {
+                transform: translateY(0);
+            }
+            5% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+
+@import '@souche/pika-style/lib/variables/vue/step.scss';
+
+
+.pk-steps {
+    display: flex;
+    position: relative;
+    &-node {
+        display: flex;
+        align-items: center;
+        position: relative;
+        flex: 1;
+        justify-content: center;
+        flex-flow: column;
+        &-icon {
+            width: $pk-steps-dot-size;
+            height: $pk-steps-dot-size;
+        }
+    }
+    &-line {
+        height: $pk-steps-line-height;
+        background-color: $color-theme-main;
+        width: 100%;
+        position: absolute;
+        top: $pk-steps-line-height * 2;
+        z-index: -1;
+        transform: translateX(-50%);
+        left: 50%;
+    }
+    &-normal-text {
+        font-size: $font-size-s;
+        color: $color-black-2;
+        margin-top: $pk-steps-mt;
+    }
+    &-select-text {
+        @extend .pk-steps-normal-text;
+        font-weight: $font-weight-medium;
+        color: $color-black-0;
+    }
+}

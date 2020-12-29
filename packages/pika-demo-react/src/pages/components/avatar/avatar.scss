@@ -1,0 +1,10 @@
+.test-class {
+    background: red;
+}
+.container {
+    display: flex;
+    align-items: center;
+    .mr_20 {
+        margin-right: 20px;
+    }
+}

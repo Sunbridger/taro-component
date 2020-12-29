@@ -1,0 +1,6 @@
+lib
+*.log
+node_modules
+dist
+src/index.ts
+src/style/components/index.scss

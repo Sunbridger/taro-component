@@ -1,0 +1,52 @@
+@import '@souche/pika-style/lib/variables/vue/picker.scss';
+@import '../common/common.scss';
+
+.pk-picker {
+    .pk-picker__trigger {
+        &--disabled {
+            @extend .disable;
+        }
+    }
+
+    .pk-picker__popup--hidden {
+        opacity: 0;
+    }
+
+    .pk-picker-box {
+        .pk-picker-box__title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: $pk-picker__title-padding;
+            font-size: $pk-picker__title-font;
+
+            &__ok {
+                color: $pk-picker__primary-color;
+            }
+
+            &__title {
+                max-width: $pk-picker__title-max-width;
+                @extend .ellipsis;
+            }
+
+            &__cancel {
+                color: $pk-picker__font-color;
+            }
+        }
+        .pk-picker-box__content {
+            .pk-picker-box__item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .pk-picker__current {
+                height: $pk-picker__current-selected-height;
+            }
+
+            .pk-picker-box__view {
+                height: $pk-picker__height;
+            }
+        }
+    }
+}

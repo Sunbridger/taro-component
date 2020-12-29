@@ -1,0 +1,144 @@
+{
+  "miniprogramRoot": "./dist",
+  "projectname": "pika-demo-vue",
+  "description": "pika-vue 组件库演示案例",
+  "appid": "wx3bc048bfbbc66439",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "postcss": false,
+    "minified": false
+  },
+  "compileType": "miniprogram",
+  "condition": {
+    "search": {
+      "current": -1,
+      "list": []
+    },
+    "conversation": {
+      "current": -1,
+      "list": []
+    },
+    "plugin": {
+      "current": -1,
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "current": -1,
+      "list": []
+    },
+    "miniprogram": {
+      "current": 14,
+      "list": [
+        {
+          "id": -1,
+          "name": "List",
+          "pathName": "pages/components/layout/list/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "Input",
+          "pathName": "pages/components/form/input/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "switch",
+          "pathName": "pages/components/form/switch/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "popup",
+          "pathName": "pages/components/layout/popup/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "textarea",
+          "pathName": "pages/components/form/textarea/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "slider",
+          "pathName": "pages/components/form/slider/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "picker",
+          "pathName": "pages/components/form/picker/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "search-bar",
+          "pathName": "pages/components/form/search-bar/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "radio",
+          "pathName": "pages/components/form/radio/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "checkbox",
+          "pathName": "pages/components/form/checkbox/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "toast",
+          "pathName": "pages/components/feedback/toast/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "overlay",
+          "pathName": "pages/components/feedback/overlay/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "dialog",
+          "pathName": "pages/components/feedback/dialog/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "tabs",
+          "pathName": "pages/components/navigation/tabs/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "index-bar",
+          "pathName": "pages/components/navigation/index-bar/index",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

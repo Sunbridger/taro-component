@@ -1,0 +1,40 @@
+.pkSideBar {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    &__left-label {
+        width: 176px;
+        background-color: $color-grey-4;
+        &__item {
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            height: 90px;
+            font-size: 26px;
+            line-height: 90px;
+            color: $color-black-1;
+            &.active {
+                position: relative;
+                font-weight: bold;
+                color: $color-black-0;
+                background-color: $color-grey-5;
+            }
+        }
+    }
+    &__right-content {
+        flex: 1;
+        height: 100%;
+        background-color: $color-grey-5;
+        &__item {
+            padding:0 32px;
+            height: 200vh;
+            background-color: $color-grey-5;
+            margin-bottom: 20px;
+            &__title {
+                font-size: 30px;
+                height: 90px;
+                line-height: 90px;
+            }
+        }
+    }
+}

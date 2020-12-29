@@ -1,0 +1,14 @@
+@import '../default.scss';
+
+$pk-search-bar__margin: $space-min $space-normal;
+$pk-search-bar__height: 72px;
+$pk-search-bar__back-color: $color-grey-4;
+$pk-search-bar__padding: 0 $space-big;
+$pk-search-bar__font-size: $font-size-l;
+$pk-search-bar__place-color: $color-grey-0;
+
+$pk-search-bar__drop-down-color: rgba(#000, 0.9);
+$pk-search-bar__drop-down-font-color: #fff;
+$pk-search-bar__drop-down-radius: $border-radius-xl;
+$pk-search-bar__drop-down-padding-col: 30px;
+$pk-search-bar__drop-down-padding-row: 32px;

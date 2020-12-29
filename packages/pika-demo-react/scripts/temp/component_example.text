@@ -1,0 +1,19 @@
+import React, { Component } from 'react';
+import { View } from '@tarojs/components';
+import { Pk_ComponentName_ } from '@souche/pika-react';
+import ShowCom from '../../../components/showCom';
+
+export default class _ComponentName_Example extends Component<any, any> {
+    constructor(props: any) {
+        super(props);
+    }
+    render() {
+        return (
+            <View className='_componentName_Example'>
+                <ShowCom title='基本使用'>
+                    <Pk_ComponentName_ />
+                </ShowCom>
+            </View>
+        );
+    }
+}

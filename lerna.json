@@ -1,0 +1,34 @@
+{
+    "packages": [
+        "packages/*"
+    ],
+    "version": "independent",
+    "ignoreChanges": [
+        "**/__fixtures__/**",
+        "**/__tests__/**",
+        "**/*.md",
+        "**/*.json",
+        "**/scripts/**",
+        "**/config/**"
+    ],
+    "command": {
+        "bootstrap": {
+            "hoist": false
+        },
+        "version": {
+            "conventionalCommits": false,
+            "allowBranch": ["master", "develop", "dev/*"]
+        },
+        "publish": {
+            "npmClient": "snpm",
+            "allowBranch": ["master", "develop", "dev/*"],
+            "directory": "dist",
+            "registry": "http://registry.npm.souche-inc.com",
+            "verifyAccess": false,
+            "verifyRegistry": false,
+            "message": "chore(release): publish"
+        }
+    },
+    "npmClient": "yarn",
+    "useWorkspaces": true
+}

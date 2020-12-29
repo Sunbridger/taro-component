@@ -1,0 +1,55 @@
+.pk-dialog {
+    position: relative;
+    .container {
+        width: 600px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        box-sizing: border-box;
+        border-radius: 24px;
+        padding: 56px 48px 40px;
+        background-color: $color-grey-5;
+        transform: translate(-50%, -50%);
+        // z-index: $zIndex-dialog;
+        z-index: 9999999;
+        .title {
+            margin-bottom: 32px;
+            text-align: center;
+            line-height: 52px;
+            font-weight: 600;
+            font-size: 40px;
+            color: $color-black-0;
+        }
+        .content {
+            text-align: center;
+            line-height: 44px;
+            font-size: 32px;
+            color: $color-black-1;
+        }
+        .button-wrap {
+            display: flex;
+            align-items: center;
+            margin-top: 48px;
+            .button {
+                flex: 1;
+                &:not(:first-child) {
+                    margin-left: 24px;
+                }
+            }
+        }
+    }
+    &-show {
+        .container {
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 0.4s, visibility 0.4s;
+        }
+    }
+    &-hide {
+        .container {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.4s, visibility 0.4s;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+@import '../default.scss';
+
+$pk-dialog__radius: $border-radius-sp;
+$pk-dialog__width: 600px;
+$pk-dialog__content_padding: $space-max $space-large $space-large;
+
+$pk-dialog__title: $font-size-big;
+$pk-dialog__title-height: 52px;
+$pk-dialog__title-weight: $font-weight-semiBold;
+$pk-dialog__title-color: #353535;
+$pk-dialog__title-bottom: $space-normal;
+
+$pk-dialog__text: $font-size-xl;
+$pk-dialog__text-height: 44px;
+$pk-dialog__text-color: $color-black-1;
+
+$pk-dialog__btn-margin: 0 $space-big $space-big;
+$pk-dialog__btn-space: $space-small;

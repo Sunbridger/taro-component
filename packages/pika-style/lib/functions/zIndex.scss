@@ -1,0 +1,13 @@
+$zindex: (
+    modal: 9000,
+    popup: 8000,
+    overlay: 8000,
+    dropdown: 7000,
+    fab: 6000,
+    toast: 9000,
+    dialog: 9000,
+);
+
+@function getZIndex($label) {
+    @return map-get($zindex,$label);
+}

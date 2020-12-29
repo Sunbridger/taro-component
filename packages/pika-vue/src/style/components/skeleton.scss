@@ -1,0 +1,33 @@
+
+@import '@souche/pika-style/lib/variables/vue/skeleton.scss';
+
+.pk-skeleton {
+    padding: $space-min;
+    display: flex;
+    &-normal {
+        flex: 1;
+    }
+    &-line {
+        height: $pk-skeleton-normal-height;
+        background: $pk-skeleton-bgc;
+        background-size: $pk-skeleton-background-size;
+        margin-bottom: $space-big;
+    }
+    &-avatar {
+        background: $pk-skeleton-bgc;
+        background-size: $pk-skeleton-background-size;
+        border-radius: $border-radius-circle;
+        margin-right: $pk-skeleton-normal-height;
+    }
+    &-animation {
+        animation: skeleton-animation $pk-skeleton-animation-time ease infinite;
+    }
+    @keyframes skeleton-animation {
+        0% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0 50%;
+        }
+    }
+}

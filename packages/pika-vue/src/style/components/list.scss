@@ -1,0 +1,8 @@
+@import '@souche/pika-style/lib/variables/vue/list.scss';
+
+.pk-list {
+    &--border {
+        border: solid $pk-list__border-color;
+        border-width: 2px 0;
+    }
+}

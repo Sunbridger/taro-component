@@ -1,0 +1,73 @@
+@import '@souche/pika-style/lib/variables/vue/input.scss';
+@import '../common/common.scss';
+
+.pk-input {
+    display: flex;
+    align-items: center;
+    padding: $pk-input__padding--vertical $pk-input__padding--align;
+    font-size: $pk-input__font-size;
+
+    .pk-input__label {
+        width: 6em;
+        flex-shrink: 0;
+        margin-right: 32px;
+        word-break: break-all;
+
+        &--required {
+            &::before {
+                content: '*';
+                color: $pk-input__primary-color;
+                margin-right: 4px;
+            }
+        }
+    }
+
+    .pk-input__input {
+        width: 100%;
+        padding-right: 50px;
+        display: flex;
+        align-items: center;
+        // 兼容h5
+        .pk-inpit__input__item {
+            border: 0;
+            outline: 0;
+            width: 100%;
+            padding: 0;
+        }
+    }
+
+    .pk-inpit-default-placeholder-class {
+        color: $pk-input__placeholder-font-color;
+    }
+
+    .pk-input__img {
+        width: 36px;
+    }
+
+    .pk-input__status {
+        position: absolute;
+        right: 32px;
+        .circle-close-icon {
+            border: 20px solid transparent;
+            margin-right: -20px;
+        }
+    }
+
+    &--border {
+        @extend .border--bottom;
+    }
+
+    &--disabled {
+        @extend .disable;
+    }
+
+    &--error {
+        .pk-input__label {
+            color: $pk-input__primary-color;
+        }
+    }
+
+    .pk-input__right {
+        flex-shrink: 0;
+    }
+}

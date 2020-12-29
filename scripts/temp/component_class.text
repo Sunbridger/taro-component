@@ -1,0 +1,13 @@
+import React, { Component } from 'react';
+// import Taro from '@tarojs/taro';
+import { View } from '@tarojs/components';
+import { I_componentName_Props, I_componentName_State } from './interface.d';
+
+export default class So_ComponentName_ extends Component<I_componentName_Props, I_componentName_State> {
+    constructor(props: I_componentName_Props) {
+        super(props);
+    }
+    render(): JSX.Element {
+        return <View className='So_ComponentName_'>Hello, So_ComponentName_</View>
+    }
+}

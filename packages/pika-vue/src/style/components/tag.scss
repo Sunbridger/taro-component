@@ -1,0 +1,83 @@
+@import '@souche/pika-style/lib/variables/vue/tag.scss';
+
+.pk-tag {
+    padding: $pk-tag-padding;
+    font-size: $font-size-s;
+    color: $color-black-0;
+    border-radius: $pk-tag-radius;
+    display: inline-block;
+    box-sizing: border-box;
+    &-primary {
+        background-color: $color-white;
+        color: $color-theme-main;
+        border: 1px solid $pk-tag-fill-backbround;
+        &-fill {
+            background-color: $pk-tag-fill-backbround;
+            border-color: $color-red-4;
+        }
+    }
+    &-default {
+        background-color: $color-white;
+        border: 1px solid $pk-tag-color-default;
+        &-fill {
+            background-color: $pk-tag-color-default;
+            border-color: none;
+        }
+    }
+    &-active-primary {
+        font-size: $font-size-xs;
+        color: $color-theme-main;
+        border: 1px solid $color-red-4;
+        border-radius: $border-radius-xl;
+        padding: 0 $pk-tag-active-padding;
+        height: $pk-tag-active-size;
+        line-height: $pk-tag-active-size;
+    }
+    &-active-default {
+        font-size: $font-size-xs;
+        color: $color-black-1;
+        border: 1px solid $color-grey-2;
+        border-radius: $border-radius-xl;
+        padding: 0 $pk-tag-active-padding;
+        height: $pk-tag-active-size;
+        line-height: $pk-tag-active-size;
+
+    }
+    &-active-fill {
+        font-size: $font-size-s;
+        color: $color-theme-main;
+        border: 1px solid $color-red-5;
+        background-color: $color-red-5;
+        border-radius: $border-radius-xl;
+        padding: 0 $pk-tag-active-padding;
+        height: $pk-tag-active-size-fill;
+        line-height: $pk-tag-active-size-fill;
+    }
+    &-status {
+        min-width: 112px;
+        padding: 6px 16px;
+        text-align: center;
+        border-radius: 16px;
+        font-size: 20px;
+    }
+    &-status-success {
+        @extend .pk-tag-status;
+        background-color: #E5FDF8;
+        color: #00B383;
+    }
+    &-status-warning {
+        @extend .pk-tag-status;
+        background-color: #FFF6D1;
+        color: #B75700;
+    }
+    &-status-danger {
+        @extend .pk-tag-status;
+        background-color: #F2F3F5;
+        color: #5E5E66;
+    }
+
+    &-disable {
+        opacity: $pk-tag-disable-opacity;
+    }
+
+}

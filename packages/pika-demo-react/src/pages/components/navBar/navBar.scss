@@ -1,0 +1,21 @@
+.navBarExample {
+    &-self-left {
+        &-icon {
+            margin-left: 8px;
+        }
+    }
+    &-self-title {
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        width: 350px;
+        height: 72px;
+        background-color: #F7F8FA;
+        border-radius: 36px;
+        padding: 24px;
+        font-size: 28px;
+        &-icon {
+            margin-right: 10px;
+        }
+    }
+}

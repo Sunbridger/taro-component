@@ -1,0 +1,22 @@
+@import '../default.scss';
+
+$pk-index-bar__index: $zIndex-indexes;
+$pk-index-bar__back-color: $color-grey-5;
+
+$pk-index-bar__toast-size: 240px;
+$pk-index-bar__toast-index: 9000;
+$pk-index-bar__toast-font: 72px;
+$pk-index-bar__toast-back: rgba(#000, 0.9);
+$pk-index-bar__toast-radius: $border-radius-sp;
+
+$pk-index-bar__title-font: $font-size-l;
+$pk-index-bar__title-padding: 28px $space-normal;
+$pk-index-bar__title-back: $color-grey-4;
+
+$pk-index-bar__item-font: $font-size-xl;
+$pk-index-bar__item-padding: 48px 0;
+$pk-index-bar__item-left: $space-normal;
+$pk-index-bar__item-border-color: #ebedf0;
+
+$pk-index-bar__image-size: 64px;
+$pk-index-bar__image-right: 20px;

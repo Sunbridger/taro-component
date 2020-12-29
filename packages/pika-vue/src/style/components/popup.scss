@@ -1,0 +1,146 @@
+@import '@souche/pika-style/lib/variables/vue/popup.scss';
+
+@keyframes mask-show {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes content-show {
+    0% {
+        transform: translate(-50%, -50%) scale(0.5);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}
+
+.pk-popup {
+    .pk-popup__mask {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: $pk-popup__mask-color;
+        z-index: $pk-popup__z-index;
+        animation: mask-show forwards;
+
+        &--hidden {
+            display: none;
+        }
+    }
+
+    .pk-popup__content {
+        position: fixed;
+        background-color: #fff;
+        min-width: 200px;
+        min-height: 200px;
+        z-index: $pk-popup__z-index;
+
+        &--hidden {
+            display: none;
+        }
+
+        &--center {
+            top: 50%;
+            left: 50%;
+            animation: content-show forwards;
+
+            &.pk-popup__content--hidden-animation {
+                animation: content-show forwards reverse;
+            }
+
+            &.pk-popup__content--round {
+                border-radius: $pk-popup__radius;
+            }
+        }
+
+        @keyframes bottom-show {
+            from {
+                transform: translate(0, 100%);
+            }
+            to {
+                transform: translate(0, 0);
+            }
+        }
+
+        &--bottom {
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            animation: bottom-show forwards;
+
+            &.pk-popup__content--round {
+                border-radius: $pk-popup__radius $pk-popup__radius 0 0;
+            }
+        }
+
+        @keyframes top-show {
+            from {
+                transform: translate(0, -100%);
+            }
+            to {
+                transform: translate(0, 0);
+            }
+        }
+
+        &--top {
+            width: 100%;
+            top: 0;
+            left: 0;
+            animation: top-show forwards;
+
+            &.pk-popup__content--round {
+                border-radius: 0 0 $pk-popup__radius $pk-popup__radius;
+            }
+        }
+
+        @keyframes left-show {
+            from {
+                transform: translate(-100%, 0);
+            }
+            to {
+                transform: translate(0, 0);
+            }
+        }
+
+        &--left {
+            height: 100%;
+            left: 0;
+            top: 0;
+            animation: left-show forwards;
+
+            &.pk-popup__content--round {
+                border-radius: 0 $pk-popup__radius $pk-popup__radius 0;
+            }
+        }
+
+        @keyframes right-show {
+            from {
+                transform: translate(100%, 0);
+            }
+            to {
+                transform: translate(0, 0);
+            }
+        }
+
+        &--right {
+            height: 100%;
+            right: 0;
+            top: 0;
+            animation: right-show forwards;
+
+            &.pk-popup__content--round {
+                border-radius: $pk-popup__radius 0 0 $pk-popup__radius;
+            }
+        }
+    }
+}

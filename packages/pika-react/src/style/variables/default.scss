@@ -1,0 +1,14 @@
+
+/* 垂直间距 */
+$spacing-v-xs: 3px * $hd !default;
+$spacing-v-sm: 6px * $hd !default;
+$spacing-v-md: 9px * $hd !default;
+$spacing-v-lg: 12px * $hd !default;
+$spacing-v-xl: 15px * $hd !default;
+
+/* Line Height */
+$line-height-base: 1 !default; // 单行
+$line-height-zh: 1.5 !default; // 中文多行
+
+// 内边距
+$padding-normal: 32px !default;

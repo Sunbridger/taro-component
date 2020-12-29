@@ -1,0 +1,47 @@
+@import '@souche/pika-style/lib/variables/vue/toast.scss';
+
+.pk-toast {
+    .pk-toast__content {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: $pk-toast__z-index;
+        font-size: $pk-toast__font-size;
+        padding: $pk-toast__padding;
+        background-color: $pk-toast__back-color;
+        color: $pk-toast__font-color;
+        border-radius: $pk-toast__radius;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .pk-toast__text {
+            font-size: $pk-toast__font-size;
+        }
+
+        &--icon {
+            border-radius: $pk-toast--icon__radius;
+            min-height: $pk-toast--icon__size;
+            width: $pk-toast--icon__size !important;
+            padding: $pk-toast__padding;
+            box-sizing: border-box;
+
+            .pk-toast__image {
+                width: $pk-toast__image-size;
+                height: $pk-toast__image-size;
+                margin-bottom: $pk-toast__image-bottom;
+            }
+
+            .pk-toast__icon {
+                margin-bottom: $pk-toast__icon-bottom;
+            }
+
+            .pk-toast__text {
+                font-size: $pk-toast--icon__font-size;
+            }
+        }
+    }
+}

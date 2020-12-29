@@ -1,0 +1,17 @@
+@import './icon/iconfont.scss';
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.pk-icon {
+    display: inline-block;
+    vertical-align: middle;
+    text-rendering: auto;
+    text-transform: none;
+    line-height: 1;
+    &-spin {
+        animation: spin 1s linear infinite;
+    }
+}

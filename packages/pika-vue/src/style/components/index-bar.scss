@@ -1,0 +1,72 @@
+@import '@souche/pika-style/lib/variables/vue/index-bar.scss';
+
+.pk-index-bar {
+    position: fixed;
+    top: 0;
+    z-index: $pk-index-bar__index;
+    height: 100vh;
+    width: 750px;
+    background-color: $pk-index-bar__back-color;
+
+    .pk-index-bar__toast {
+        position: absolute;
+        width: $pk-index-bar__toast-size;
+        height: $pk-index-bar__toast-size;
+        background-color: $pk-index-bar__toast-back;
+        font-size: $pk-index-bar__toast-font;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: $pk-index-bar__toast-index;
+        border-radius: $pk-index-bar__toast-radius;
+        color: $pk-index-bar__back-color;
+    }
+
+    .pk-index-bar__scroll {
+        height: 100%;
+    }
+
+    .pk-index-bar__group {
+        .pk-index-bar__title {
+            font-size: $pk-index-bar__back-color;
+            padding: $pk-index-bar__title-padding;
+            background-color: $pk-index-bar__title-back;
+        }
+
+        .pk-index-bar__lists {
+            .pk-index-bar__item {
+                font-size: $pk-index-bar__title-back;
+                padding: $pk-index-bar__item-padding;
+                margin-left: $pk-index-bar__item-left;
+                border-bottom: 1px solid $pk-index-bar__item-border-color;
+                display: flex;
+                align-items: center;
+
+                &:last-child {
+                    border-bottom: 0px;
+                }
+
+                .pk-index-bar__item__image {
+                    height: $pk-index-bar__image-size;
+                    width: $pk-index-bar__image-size;
+                    margin-right: $pk-index-bar__image-right;
+                }
+            }
+        }
+    }
+
+    .pk-index-bar__indexes {
+        position: absolute;
+        top: 50%;
+        right: 14px;
+        transform: translateY(-50%);
+        z-index: 910;
+
+        .pk-index-bar__indexes__item {
+            padding: 6px;
+        }
+    }
+}

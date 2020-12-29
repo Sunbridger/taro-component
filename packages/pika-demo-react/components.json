@@ -1,0 +1,252 @@
+{
+    "ui": [
+        {
+            "category": "basic",
+            "name": "基础组件",
+            "icon": "//img.souche.com/f2e/66dee96347f065dc0b5d2ed057834a98.png",
+            "list": [
+                {
+                    "name": "button",
+                    "type": "ui",
+                    "chinese": "按钮",
+                    "path": "/pages/components/button/button"
+                },
+                {
+                    "name": "icon",
+                    "type": "ui",
+                    "chinese": "图标",
+                    "path": "/pages/components/icon/icon"
+                },
+                {
+                    "name": "image",
+                    "type": "ui",
+                    "chinese": "图片",
+                    "path": "/pages/components/image/image"
+                },
+                {
+                    "name": "fab",
+                    "type": "ui",
+                    "chinese": "悬浮按钮",
+                    "path": "/pages/components/fab/fab"
+                }
+            ]
+        },
+        {
+            "category": "layout",
+            "name": "布局组件",
+            "icon": "//img.souche.com/f2e/b6553dcb3757be91c698f1c65de32bc1.png",
+            "list": [
+                {
+                    "name": "list",
+                    "type": "ui",
+                    "chinese": "列表",
+                    "path": "/pages/components/list/list"
+                },
+                {
+                    "name": "popup",
+                    "type": "ui",
+                    "chinese": "弹出层",
+                    "path": "/pages/components/popup/popup"
+                },
+                {
+                    "name": "scrollList",
+                    "type": "ui",
+                    "chinese": "滑动列表",
+                    "path": "/pages/components/scrollList/scrollList",
+                    "disable": true
+                }
+            ]
+        },
+        {
+            "category": "form",
+            "name": "表单组件",
+            "icon": "//img.souche.com/f2e/4598b1e08898d1bfb6730d713c1cdcfd.png",
+            "list": [
+                {
+                    "name": "range",
+                    "type": "ui",
+                    "chinese": "范围选择器",
+                    "path": "/pages/components/range/range"
+                },
+                {
+                    "name": "Checkbox",
+                    "type": "ui",
+                    "chinese": "多选框",
+                    "path": "/pages/components/Checkbox/Checkbox"
+                },
+                {
+                    "name": "textarea",
+                    "type": "ui",
+                    "chinese": "文本框",
+                    "path": "/pages/components/textarea/textarea"
+                },
+                {
+                    "name": "input",
+                    "type": "ui",
+                    "chinese": "输入框",
+                    "path": "/pages/components/input/input"
+                },
+                {
+                    "name": "switch",
+                    "type": "ui",
+                    "chinese": "开关",
+                    "path": "/pages/components/switch/switch"
+                },
+                {
+                    "name": "picker",
+                    "type": "ui",
+                    "chinese": "选择器",
+                    "path": "/pages/components/picker/picker"
+                },
+                {
+                    "name": "date-picker",
+                    "type": "ui",
+                    "chinese": "日期选择器",
+                    "path": "/pages/components/date-picker/date-picker"
+                },
+                {
+                    "name": "time-picker",
+                    "type": "ui",
+                    "chinese": "时间选择器",
+                    "path": "/pages/components/time-picker/time-picker"
+                },
+                {
+                    "name": "radio",
+                    "type": "ui",
+                    "chinese": "单选按钮",
+                    "path": "/pages/components/radio/radio"
+                },
+                {
+                    "name": "search-bar",
+                    "type": "ui",
+                    "chinese": "搜索栏",
+                    "path": "/pages/components/search-bar/search-bar"
+                },
+                {
+                    "name": "uploader",
+                    "type": "ui",
+                    "chinese": "上传文件",
+                    "path": "/pages/components/uploader/uploader"
+                },
+                {
+                    "name": "form",
+                    "type": "ui",
+                    "chinese": "表单",
+                    "path": "/pages/components/form/form"
+                },
+                {
+                    "name": "date-time-picker",
+                    "type": "ui",
+                    "chinese": "日期时间选择器",
+                    "path": "/pages/components/date-time-picker/date-time-picker"
+                }
+            ]
+        },
+        {
+            "category": "feedback",
+            "name": "反馈组件",
+            "icon": "//img.souche.com/f2e/24b3e2a622cc799c3a0b4b2671abf090.png",
+            "list": [
+                {
+                    "name": "dialog",
+                    "type": "ui",
+                    "chinese": "对话框",
+                    "path": "/pages/components/dialog/dialog"
+                },
+                {
+                    "name": "toast",
+                    "type": "ui",
+                    "chinese": "提示",
+                    "path": "/pages/components/toast/toast"
+                },
+                {
+                    "name": "overlaly",
+                    "type": "ui",
+                    "chinese": "遮罩层",
+                    "path": "/pages/components/overlay/overlay"
+                }
+            ]
+        },
+        {
+            "category": "navigate",
+            "name": "导航组件",
+            "icon": "//img.souche.com/f2e/eca59b1632127f4da033453c2edd7d4a.png",
+            "list": [
+                {
+                    "name": "navBar",
+                    "type": "ui",
+                    "chinese": "顶部导航栏",
+                    "path": "/pages/components/navBar/navBar"
+                },
+                {
+                    "name": "tabBar",
+                    "type": "ui",
+                    "chinese": "底部标签栏",
+                    "path": "/pages/components/tabBar/tabBar"
+                },
+                {
+                    "name": "tabs",
+                    "type": "ui",
+                    "chinese": "标签栏",
+                    "path": "/pages/components/tabs/tabs"
+                },
+                {
+                    "name": "indexBar",
+                    "type": "ui",
+                    "chinese": "索引选择器",
+                    "path": "/pages/components/indexBar/indexBar"
+                }
+            ]
+        },
+        {
+            "category": "visual",
+            "name": "视图组件",
+            "icon": "//img.souche.com/f2e/f1a224469c14ade09decca7b4ddcab91.png",
+            "list": [
+                {
+                    "name": "avatar",
+                    "type": "ui",
+                    "chinese": "用户头像",
+                    "path": "/pages/components/avatar/avatar"
+                },
+                {
+                    "name": "badge",
+                    "type": "ui",
+                    "chinese": "徽标",
+                    "path": "/pages/components/badge/badge"
+                },
+                {
+                    "name": "sticky",
+                    "type": "ui",
+                    "chinese": "粘性布局",
+                    "path": "/pages/components/sticky/sticky"
+                },
+                {
+                    "name": "tag",
+                    "type": "ui",
+                    "chinese": "标签组件",
+                    "path": "/pages/components/tag/tag"
+                },
+                {
+                    "name": "notice",
+                    "type": "ui",
+                    "chinese": "提示文字",
+                    "path": "/pages/components/notice/notice"
+                },
+                {
+                    "name": "steps",
+                    "type": "ui",
+                    "chinese": "步骤条",
+                    "path": "/pages/components/steps/steps"
+                },
+                {
+                    "name": "swiper",
+                    "type": "ui",
+                    "chinese": "滑动视图容器",
+                    "path": "/pages/components/swiper/swiper"
+                }
+            ]
+        }
+    ],
+    "plugin": []
+}

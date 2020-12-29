@@ -1,0 +1,233 @@
+{
+    "ui": [
+        {
+            "category": "basic",
+            "list": [
+                {
+                    "name": "button",
+                    "chinese": "按钮",
+                    "mode": "function",
+                    "path": "/components/button/index"
+                },
+                {
+                    "name": "icon",
+                    "chinese": "图标",
+                    "mode": "function",
+                    "path": "/components/icon/index"
+                },
+                {
+                    "name": "image",
+                    "chinese": "图片",
+                    "mode": "function",
+                    "path": "/components/image/index"
+                },
+                {
+                    "name": "fab",
+                    "chinese": "悬浮按钮",
+                    "mode": "function",
+                    "path": "/components/fab/index"
+                },
+                {
+                    "name": "textarea",
+                    "chinese": "文本框",
+                    "mode": "class",
+                    "path": "/components/textarea/index"
+                },
+                {
+                    "name": "input",
+                    "chinese": "输入框",
+                    "mode": "class",
+                    "path": "/components/input/index"
+                },
+                {
+                    "name": "radio",
+                    "chinese": "单选按钮",
+                    "mode": "class",
+                    "path": "/components/radio/index"
+                },
+                {
+                    "name": "search-bar",
+                    "chinese": "搜索栏",
+                    "mode": "class",
+                    "path": "/components/search-bar/index"
+                }
+            ]
+        },
+        {
+            "category": "layout",
+            "list": [
+                {
+                    "name": "list",
+                    "chinese": "列表",
+                    "mode": "function",
+                    "path": "/components/list/index"
+                },
+                {
+                    "name": "popup",
+                    "chinese": "弹出层",
+                    "mode": "function",
+                    "path": "/components/popup/index"
+                },
+                {
+                    "name": "scrollList",
+                    "chinese": "滑动列表",
+                    "mode": "function",
+                    "path": "/components/scrollList/index"
+                }
+            ]
+        },
+        {
+            "category": "form",
+            "list": [
+                {
+                    "name": "range",
+                    "chinese": "范围选择器",
+                    "mode": "class",
+                    "path": "/components/range/index"
+                },
+                {
+                    "name": "switch",
+                    "chinese": "开关",
+                    "mode": "class",
+                    "path": "/components/switch/index"
+                },
+                {
+                    "name": "picker",
+                    "chinese": "选择器",
+                    "mode": "function",
+                    "path": "/components/picker/index"
+                },
+                {
+                    "name": "date-picker",
+                    "chinese": "日期选择器",
+                    "mode": "function",
+                    "path": "/components/date-picker/index"
+                },
+                {
+                    "name": "uploader",
+                    "chinese": "上传文件",
+                    "mode": "class",
+                    "path": "/components/uploader/index"
+                },
+                {
+                    "name": "time-picker",
+                    "chinese": "时间选择器",
+                    "mode": "function",
+                    "path": "/components/time-picker/index"
+                },
+                {
+                    "name": "form",
+                    "chinese": "表单",
+                    "mode": "class",
+                    "path": "/components/form/index"
+                },
+                {
+                    "name": "date-time-picker",
+                    "chinese": "日期时间选择器",
+                    "mode": "function",
+                    "path": "/components/date-time-picker/index"
+                }
+            ]
+        },
+        {
+            "category": "feedback",
+            "list": [
+                {
+                    "name": "dialog",
+                    "chinese": "对话框",
+                    "mode": "function",
+                    "path": "/components/dialog/index"
+                },
+                {
+                    "name": "toast",
+                    "chinese": "提示",
+                    "mode": "function",
+                    "path": "/components/toast/index"
+                },
+                {
+                    "name": "overlay",
+                    "chinese": "遮罩层",
+                    "mode": "function",
+                    "path": "/components/overlay/index"
+                }
+            ]
+        },
+        {
+            "category": "navigate",
+            "list": [
+                {
+                    "name": "navBar",
+                    "chinese": "顶部导航栏",
+                    "mode": "class",
+                    "path": "/components/navBar/index"
+                },
+                {
+                    "name": "tabBar",
+                    "chinese": "底部标签栏",
+                    "mode": "class",
+                    "path": "/components/tabBar/index"
+                },
+                {
+                    "name": "tabs",
+                    "chinese": "标签栏",
+                    "mode": "class",
+                    "path": "/components/tabs/index"
+                },
+                {
+                    "name": "indexBar",
+                    "chinese": "索引选择器",
+                    "mode": "class",
+                    "path": "/components/indexBar/index"
+                }
+            ]
+        },
+        {
+            "category": "visual",
+            "list": [
+                {
+                    "name": "avatar",
+                    "chinese": "用户头像",
+                    "mode": "class",
+                    "path": "/components/avatar/index"
+                },
+                {
+                    "name": "badge",
+                    "chinese": "徽标",
+                    "mode": "class",
+                    "path": "/components/badge/index"
+                },
+                {
+                    "name": "sticky",
+                    "chinese": "粘性布局",
+                    "mode": "class",
+                    "path": "/components/sticky/index"
+                },
+                {
+                    "name": "tag",
+                    "chinese": "标签组件",
+                    "mode": "class",
+                    "path": "/components/tag/index"
+                },
+                {
+                    "name": "notice",
+                    "chinese": "提示文字",
+                    "mode": "class",
+                    "path": "/components/notice/index"
+                },
+                {
+                    "name": "steps",
+                    "chinese": "步骤条",
+                    "mode": "class",
+                    "path": "/components/steps/index"
+                },
+                {
+                    "name": "swiper",
+                    "chinese": "滑动视图容器",
+                    "mode": "function",
+                    "path": "/components/swiper/index"
+                }
+            ]
+        }
+    ],
+    "plugin": []
+}

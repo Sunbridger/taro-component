@@ -1,0 +1,17 @@
+{
+  "name": "@souche/pika-doc",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "node ./scripts/build.js"
+  },
+  "dependencies": {
+    "@souche/pika-demo-vue": "^1.0.3-alpha.8"
+  },
+  "devDependencies": {
+    "sass": "^1.29.0",
+    "sass-loader": "^10.0.5",
+    "vuepress": "^1.7.1"
+  }
+}

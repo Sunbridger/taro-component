@@ -1,0 +1,17 @@
+/**
+ * 全局调色板
+ */
+@import './colorPalette.scss';
+
+/* 红色 */
+$red-base: #f01d24;
+$color-red-1: colorPalette($red-base, 1) !default;
+$color-red-2: colorPalette($red-base, 2) !default;
+$color-red-3: colorPalette($red-base, 3) !default;
+$color-red-4: colorPalette($red-base, 4) !default;
+$color-red-5: colorPalette($red-base, 5) !default;
+$color-red-6: $red-base !default;
+$color-red-7: colorPalette($red-base, 7) !default;
+$color-red-8: colorPalette($red-base, 8) !default;
+$color-red-9: colorPalette($red-base, 9) !default;
+$color-red-10: colorPalette($red-base, 10) !default;

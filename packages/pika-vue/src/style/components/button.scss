@@ -1,0 +1,129 @@
+@import '@souche/pika-style/lib/variables/vue/button.scss';
+@import '../common/varibles.scss';
+
+.pk-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: none;
+    background: none;
+    outline: none;
+    position: relative;
+    margin: 0;
+
+    &::after {
+        display: none;
+    }
+    // size
+    &--small {
+        min-width: $pk-button__min-width--small;
+        height: $pk-button__size--small;
+        border-radius: $pk-button__padding--normal;
+        padding: 0 $pk-button__padding--small;
+        font-weight: $font-weight-medium;
+        font-size: $font-size-s;
+    }
+    &--medium {
+        min-width: $pk-button__min-width--medium;
+        height: $pk-button__size--medium;
+        border-radius: $pk-button__padding--normal;
+        padding: 0 $pk-button__padding--medium;
+        font-weight: $font-weight-medium;
+        font-size: $font-size-l;
+    }
+    &--large {
+        min-width: $pk-button__min-width--large;
+        height: $pk-button__size--large;
+        border-radius: $pk-button__radius--large;
+        padding: 0 $pk-button__padding--large;
+        font-weight: $font-weight-medium;
+        font-size: $font-size-xl;
+    }
+    // type
+    &--primary {
+        background-color: $color-theme-main;
+        color: $color-grey-5;
+        &--disabled {
+            color: $color-grey-5!important; // 覆盖disable默认字体样式
+            opacity: $pk_button__opacity--disable;
+        }
+    }
+
+    &--secondary {
+        background-color: $color-default;
+        color: $color-black-0;
+        // &--disabled {
+        //     opacity: $pk_button__opacity--disable;
+        // }
+        &--pressed {
+            opacity: $pk_button__opacity--disable;
+        }
+    }
+
+    &--linear {
+        border: 1px solid $color-theme-main;
+        background-color: $color-grey-5;
+        color: $color-theme-main;
+        &--disabled {
+            color: $color-theme-main!important;
+            opacity: $pk_button__opacity--disable;
+        }
+        &--pressed {
+            border-color: $color-theme-main;
+            color: $color-theme-main;
+        }
+    }
+
+    &--text {
+        color: $color-theme-main;
+        &--disabled {
+            color: $color-theme-main!important;
+            opacity: $pk_button__opacity--disable;
+        }
+        &--pressed {
+            color: $color-theme-main;
+        }
+    }
+
+    &--hollow {
+        color: $color-theme-main;
+        border: 1px solid $color-theme-main;
+        background-color: transparent;
+        &--disabled {
+            color: $color-theme-main!important;
+            opacity: $pk_button__opacity--disable;
+        }
+    }
+    &--other {
+        @extend .pk-button--full;
+        @extend .pk-button--nocircle;
+        background-color: $color-grey-5;
+    }
+    &--nocircle {
+        border-radius: 0;
+    }
+    &--full {
+        width: 100%;
+    }
+    &-group {
+        padding: 0 $pk-button__padding--large;
+        display: flex;
+        .pk-button:last-child {
+            flex: 1;
+            margin-left: 24px;
+        }
+        &-flex {
+            .pk-button:first-child {
+                flex: 1;
+            }
+        }
+    }
+
+    // 兼容button原生组件类名 H5下默认样式无法覆盖？
+    &-primary, &-secondary, &-linear, &-text {
+        &-pressed {
+            opacity: $pk_button__opacity--disable;
+        }
+    }
+}

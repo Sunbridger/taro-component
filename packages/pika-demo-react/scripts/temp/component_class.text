@@ -1,0 +1,11 @@
+import React, { Component } from 'react';
+import { View } from '@tarojs/components';
+
+export default class Pk_ComponentName_ extends Component<any, any> {
+    constructor(props: any) {
+        super(props);
+    }
+    render(): JSX.Element {
+        return <View className='pk_ComponentName_'>Hello, Pk_ComponentName_</View>;
+    }
+}

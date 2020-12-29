@@ -1,0 +1,18 @@
+@import '../default.scss';
+
+$pk-toast__font-size: 32px;
+$pk-toast--icon__font-size: 28px;
+
+$pk-toast__z-index: 9000;
+$pk-toast__padding: $space-normal;
+$pk-toast--icon__padding: $space-normal 22px 16px;
+$pk-toast__back-color: rgba(#000, 0.9);
+$pk-toast__font-color: #fff;
+$pk-toast__max-width: 10em;
+$pk-toast__radius: 8px;
+$pk-toast--icon__radius: 24px;
+$pk-toast--icon__size: 240px;
+$pk-toast__image-size: 80px;
+$pk-toast__image-bottom: 24px;
+$pk-toast__icon-bottom: 28px;
+

@@ -1,0 +1,166 @@
+$component:'.pkTabs';
+
+#{$component} {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+    &__direction-0 {
+        flex-direction: column;
+        #{$component}-header {
+            justify-content: space-between;
+            flex-direction: row;
+            &-item {
+                padding: 26px 0;
+                margin: 0 27px;
+
+
+                &:first-child {
+                    margin: 0 27px 0 0;
+                }
+
+                &:last-child {
+                    margin: 0 0 0 27px;
+                }
+
+                &.active {
+                    #{$component}-header-item__underline {
+                        -webkit-transform: scaleX(1);
+                        transform: scaleX(1);
+                    }
+                }
+            }
+            &-item__underline {
+                position: absolute;
+                //left: calc(50% - 42px);
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 6px;
+                -webkit-transform: scaleX(0);
+                transform: scaleX(0);
+            }
+        }
+        #{$component}-body-content {
+            display: inline-block;
+        }
+    }
+    &__direction-1 {
+        flex-direction: row;
+        #{$component}-wrapper {
+            width: 176px;
+        }
+        #{$component}-header {
+            flex-direction: column;
+            &-item {
+                padding: 10px 26px;
+                margin: 30px 0;
+                &:first-child {
+                    margin: 0 0 30px 0;
+                }
+
+                &:last-child {
+                    margin: 30px 0 0 0;
+                }
+                &.active {
+                    #{$component}-header-item__underline {
+                        -webkit-transform: scaleY(1);
+                        transform: scaleY(1);
+                    }
+                }
+            }
+            &-item__underline {
+                position: absolute;
+                right: 0;
+                //bottom: calc(50% - 20px);
+                bottom: 0;
+                width: 6px;
+                height: 100%;
+                -webkit-transform: scaleY(0);
+                transform: scaleY(0);
+            }
+        }
+        #{$component}-body-content {
+            display: block;
+        }
+    }
+    &-wrapper {
+        box-sizing: border-box;
+        border-bottom: solid 1px #dddddd;
+        background-color: #fff;
+        #{$component}-header {
+            position: relative;
+            display: flex;
+            z-index: 100;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            white-space: nowrap;
+            font-size: $font-size-l;
+            overflow: -moz-scrollbars-none;
+
+            &-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                //flex: 2;
+                position: relative;
+                font-size: $font-size-l;
+                line-height: 1;
+                color: $color-grey-0;
+                //text-overflow: ellipsis;
+                //overflow: hidden;
+                //min-width: 80px;
+
+                &.active {
+                    font-weight: bold;
+                    color: $color-black-0;
+                    //#{$component}-header-item__underline {
+                    //    -webkit-transform: scaleX(1);
+                    //    transform: scaleX(1);
+                    //}
+                }
+                &__underline {
+                    display: block;
+
+                    background-color: $color-theme-main;
+                    border-radius: 6px;
+
+                    transition: all 0.15s;
+                }
+            }
+        }
+    }
+    &-body {
+        overflow: hidden;
+        &-wrapper {
+            display: block;
+            width: 100%;
+            white-space: nowrap;
+            will-change: transform, left, top;
+            overflow: visible;
+            &.animation {
+                transition: all 0.3s;
+            }
+            #{$component}-body-content {
+                //display: inline-block;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                white-space: initial;
+                vertical-align: top;
+                &--active {
+                    height: auto;
+                }
+                &--inactive {
+                    height: 0;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+
+}

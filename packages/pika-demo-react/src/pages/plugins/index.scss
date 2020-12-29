@@ -1,0 +1,12 @@
+.plugin_list {
+    padding: 0 20px;
+    &_content {
+        margin-bottom: 20px;
+        &_title {
+            margin-bottom: 10px;
+        }
+    }
+    &_btn {
+        margin-bottom: 40px;
+    }
+}

@@ -1,0 +1,170 @@
+[
+    {
+        "name": "基础组件",
+        "path": "basic",
+        "items": [
+            {
+                "name": "Button (按钮)",
+                "path": "button/index"
+            },
+            {
+                "name": "Icon (图标)",
+                "path": "icon/index"
+            },
+            {
+                "name": "Fab (悬浮按钮)",
+                "path": "fab/index"
+            },
+            {
+                "name": "Image (图片)",
+                "path": "image/index"
+            }
+        ]
+    },
+    {
+        "name": "布局组件",
+        "path": "layout",
+        "items": [
+            {
+                "name": "Popup (弹出层)",
+                "path": "popup/index"
+            },
+            {
+                "name": "List (列表)",
+                "path": "list/index"
+            }
+        ]
+    },
+    {
+        "name": "视图组件",
+        "path": "views",
+        "items": [
+            {
+                "name": "Avatar (用户头像)",
+                "path": "avatar/index"
+            },
+            {
+                "name": "Badge (徽标)",
+                "path": "badge/index"
+            },
+            {
+                "name": "Tag (标签)",
+                "path": "tag/index"
+            },
+            {
+                "name": "Notice (提示)",
+                "path": "notice/index"
+            },
+            {
+                "name": "Swiper (滑动视图容器)",
+                "path": "swiper/index"
+            },
+            {
+                "name": "Steps (步骤条)",
+                "path": "steps/index"
+            },
+            {
+                "name": "Skeleton (骨架屏)",
+                "path": "skeleton/index"
+            },
+            {
+                "name": "Sticky (粘性布局)",
+                "path": "sticky/index"
+            }
+        ]
+    },
+    {
+        "name": "表单组件",
+        "path": "form",
+        "items": [
+            {
+                "name": "Input (输入框)",
+                "path": "input/index"
+            },
+            {
+                "name": "Switch (滑动开关)",
+                "path": "switch/index"
+            },
+            {
+                "name": "Textarea (文本域)",
+                "path": "textarea/index"
+            },
+            {
+                "name": "Slider (滑动条)",
+                "path": "slider/index"
+            },
+            {
+                "name": "Picker (选择器)",
+                "path": "picker/index"
+            },
+            {
+                "name": "DatePicker (日期选择器)",
+                "path": "date-picker/index"
+            },
+            {
+                "name": "TimePicker (时间选择器)",
+                "path": "time-picker/index"
+            },
+            {
+                "name": "SearchBar (搜索框)",
+                "path": "search-bar/index"
+            },
+            {
+                "name": "Form (表单)",
+                "path": "form/index"
+            },
+            {
+                "name": "Radio (单选框)",
+                "path": "radio/index"
+            },
+            {
+                "name": "Checkbox (多选框)",
+                "path": "checkbox/index"
+            }
+        ]
+    },
+    {
+        "name": "反馈组件",
+        "path": "feedback",
+        "items": [
+            {
+                "name": "Toast (轻提示)",
+                "path": "toast/index"
+            },
+            {
+                "name": "Overlay (遮罩层)",
+                "path": "overlay/index"
+            },
+            {
+                "name": "Dialog (对话框)",
+                "path": "dialog/index"
+            }
+        ]
+    },
+    {
+        "name": "导航组件",
+        "path": "navigation",
+        "items": [
+            {
+                "name": "Tabs (标签页)",
+                "path": "tabs/index"
+            },
+            {
+                "name": "NavBar (导航栏)",
+                "path": "nav-bar/index"
+            },
+            {
+                "name": "SideBar (侧边栏)",
+                "path": "side-bar/index"
+            },
+            {
+                "name": "TabBar (底部标签栏)",
+                "path": "tab-bar/index"
+            },
+            {
+                "name": "IndexBar (索引栏)",
+                "path": "index-bar/index"
+            }
+        ]
+    }
+]

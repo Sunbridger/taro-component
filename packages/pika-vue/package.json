@@ -1,0 +1,68 @@
+{
+  "name": "@souche/pika-vue",
+  "version": "0.1.0",
+  "description": "Pika ui for Vue",
+  "author": "Souche Taro team",
+  "homepage": "",
+  "license": "ISC",
+  "module": "dist/index.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ],
+  "lib": {
+    "@souche/pika-vue": "./dist/index.js"
+  },
+  "templateInfo": {
+    "name": "vuex",
+    "typescript": true,
+    "css": "sass"
+  },
+  "browserslist": [
+    "last 3 versions",
+    "Android >= 4.1",
+    "ios >= 8"
+  ],
+  "publishConfig": {
+    "registry": "http://registry.npm.souche-inc.com/"
+  },
+  "scripts": {
+    "dev": "npm run build && gulp --gulpfile ./config/tasks/develop.js --cwd ./ watch",
+    "clean": "gulp --gulpfile ./config/tasks/dealFile.js --cwd ./ cleanDist",
+    "gulp:style": "gulp --gulpfile ./config/tasks/compile.js --cwd ./ compileScss",
+    "build": "yarn build:cpt && yarn build:style && yarn build:gulp",
+    "build:cpt": "node ./config/build-cpt.js",
+    "build:style": "node ./config/build-style.js",
+    "build:gulp": "gulp --gulpfile ./config/tasks --cwd ./",
+    "new": "node ./config/new.js"
+  },
+  "dependencies": {
+    "@souche/pika-style": "^0.1.0",
+    "dayjs": "^1.7.7",
+    "lodash": "^4.17.10"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.5.0",
+    "del": "^5.1.0",
+    "fs-extra": "^9.0.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^6.1.2",
+    "gulp-changed": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-debug": "^4.0.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "inquirer": "^7.3.3",
+    "typescript": "^3.9.7"
+  },
+  "peerDependencies": {
+    "@tarojs/components": ">=3",
+    "@tarojs/taro": ">=3",
+    "vue": "^2.6.12",
+    "vue-template-compiler": "^2.6.12"
+  }
+}

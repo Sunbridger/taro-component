@@ -1,0 +1,22 @@
+{
+  "name": "@souche/pika-vue-plugins",
+  "version": "0.0.3-alpha.2",
+  "description": "Pika ui plugins for Vue",
+  "author": "Souche Taro team",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/pika-vue-plugins.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "http://registry.npm.souche-inc.com/"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  }
+}

@@ -1,0 +1,12 @@
+.sideBarExample {
+    height: 100vh;
+    .self__title {
+        display: flex;
+        align-items: center;
+        .label__image {
+            width: 18px;
+            height: 12px;
+            margin-left: 12px;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+.pkBadge {
+    position: relative;
+    display: inline-block;
+    font-size: 0;
+    vertical-align: middle;
+    &-dot {
+        position: absolute;
+        right: -6px;
+        top: -4px;
+        width: $pk-badge-dot-size;
+        height: $pk-badge-dot-size;
+        border-radius: 50%;
+        overflow: hidden;
+        background: $pk-badge-bg;
+        border: $pk-badge-border;
+    }
+    &-info {
+        position: absolute;
+        padding: 0 10px;
+        top: -6px;
+        right: 12px;
+        box-sizing: border-box;
+        color: $pk-badge-color;
+        font-size: $pk-badge-font-size;
+        border-radius: $pk-badge-border-radius;
+        background: $pk-badge-bg;
+        border: $pk-badge-border;
+        transform: translate(100%, 0);
+        overflow: hidden;
+        z-index: 1;
+        height: $pk-badge-height;
+        line-height: $pk-badge-height;
+    }
+}

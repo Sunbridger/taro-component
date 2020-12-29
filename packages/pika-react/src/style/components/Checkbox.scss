@@ -1,0 +1,87 @@
+$component: '.pk-checkbox';
+
+#{$component} {
+    position: relative;
+    background-color: $color-grey-5;
+    @include hairline-top-relative();
+    @include hairline-bottom-relative();
+
+    /* elements */
+    &__option-wrap {
+        padding: 3 * $space-base $space-base 3 * $space-base 0;
+    }
+
+    &__option-cnt {
+        display: flex;
+        align-items: center;
+    }
+
+    &__title {
+        display: inline-flex;
+        color: $pk-checkbox-title-color;
+        font-size: $pk-checkbox-title-font-size;
+        line-height: $line-height-base;
+        text-align: left;
+    }
+
+    &__icon-cnt {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4px;
+        margin-right: $space-base;
+        width: $pk-checkbox-circle-size;
+        min-width: $pk-checkbox-circle-size;
+        height: $pk-checkbox-circle-size;
+        color: transparent;
+        font-size: $pk-checkbox-icon-size;
+        line-height: 1;
+        border-radius: $border-radius-circle;
+        box-sizing: border-box;
+        transition: all 0.2s;
+        background: url("//img.souche.com/f2e/62e91660262c0aeeec61cf0c54b625e2.png") no-repeat;
+        background-size: cover;
+    }
+
+    &__desc {
+        display: block;
+        padding-left: $pk-checkbox-circle-size + $space-base;
+        color: $pk-checkbox-desc-color;
+        font-size: $pk-checkbox-desc-font-size;
+        text-align: left;
+        line-height: $line-height-base;
+        letter-spacing: 0;
+    }
+
+    &__option {
+        padding-left: $space-base;
+        @include active;
+
+        &--disabled {
+            #{$component}__option-cnt,
+            #{$component}__desc {
+                opacity: 1;
+            }
+
+            &:active {
+                background-color: $color-grey-5;
+            }
+        }
+
+        &--selected {
+            #{$component}__icon-cnt {
+                background-image: url("//img.souche.com/f2e/9880f646578c276cb79727cb1e22a74e.png");
+            }
+        }
+    }
+
+    &__option + &__option {
+        #{$component}__option-wrap {
+            @include hairline-top();
+        }
+    }
+
+    .pk-icon {
+        font-size: 32px;
+    }
+}

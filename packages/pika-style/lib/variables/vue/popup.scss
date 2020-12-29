@@ -1,0 +1,6 @@
+@import '../../functions/zIndex.scss';
+@import '../default.scss';
+
+$pk-popup__z-index: $zIndex-popup;
+$pk-popup__mask-color: rgba(#000, 0.75);
+$pk-popup__radius: $border-radius-sp;

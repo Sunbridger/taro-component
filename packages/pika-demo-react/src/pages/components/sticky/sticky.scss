@@ -1,0 +1,19 @@
+.stickyExample {
+    .stickyWrapper {
+        height: 250vh;
+        text-align: center;
+        .wrapper {
+            position: sticky;
+            top: 0;
+            height: 800px;
+            border: 2px solid #7f7f7f;
+            margin: 20px;
+            box-sizing: border-box;
+            .content {
+                height: 100px;
+                background-color: #ffa700;
+            }
+        }
+    }
+
+}

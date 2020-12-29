@@ -1,0 +1,38 @@
+@import '@souche/pika-style/lib/variables/vue/dialog.scss';
+
+.pk-dialog {
+    .pk-dialog__content {
+        border-radius: $pk-dialog__radius !important;
+        width: $pk-dialog__width;
+
+        .pk-dialog__text-content {
+            margin: $pk-dialog__content_padding;
+
+            .pk-dialog__title {
+                font-size: $pk-dialog__title;
+                line-height: $pk-dialog__title-height;
+                font-weight: $pk-dialog__title-weight;
+                text-align: center;
+                color: $pk-dialog__title-color;
+            }
+            .pk-dialog__text {
+                margin-top: $pk-dialog__title-bottom;
+                font-size: $pk-dialog__text;
+                color: $pk-dialog__text-color;
+            }
+        }
+
+        .pk-dialog__footer {
+            margin: $pk-dialog__btn-margin;
+            text-align: center;
+            display: flex;
+            .pk-dialog__cancel,
+            .pk-dialog__confirm {
+                width: 100%;
+            }
+            .pk-dialog__cancel {
+                margin-right: $pk-dialog__btn-space;
+            }
+        }
+    }
+}

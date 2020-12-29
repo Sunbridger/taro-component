@@ -1,0 +1,39 @@
+@import '@souche/pika-style/lib/variables/vue/check-box.scss';
+
+.pk-checkbox {
+    .selected {
+        color: $pk-check-box__selected-color;
+        .pk-list-item__note {
+            color: lighten($pk-check-box__selected-color, 15);
+        }
+    }
+
+    .disabled {
+        filter: grayscale(1);
+    }
+
+    .pk-checkbox__pre-icon {
+        top: 50% !important;
+        transform: translateY(-50%);
+        margin-top: 5px;
+        &--selected {
+            color: $pk-check-box__selected-color !important;
+        }
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        flex-shrink: 0;
+        min-width: 50px;
+
+        &--disabled {
+            filter: grayscale(1);
+        }
+
+        .pk-checkbox__selected-icon {
+            color: $pk-check-box__selected-color !important;
+        }
+    }
+}

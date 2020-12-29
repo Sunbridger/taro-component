@@ -1,0 +1,87 @@
+$range-slider-size: 20PX !default;
+$range-rail-height: 4PX !default;
+$range-rail-bg-color: #ededf0 !default;
+$range-track-bg-color: #f01d24 !default;
+$range-slider-color: #fff !default;
+$range-slider-shadow: 0 0 4PX 0 rgba(0, 0, 0, 0.2) !default;
+.pk-range {
+    position: relative;
+    padding: 0 $range-slider-size / 2 + 4PX;
+    width: 100%;
+    box-sizing: border-box;
+    .range-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+        .range-header-name {
+            font-size: 30px;
+        }
+        .range-header-unit {
+            font-size: 26px;
+            color: #5e5e66;
+        }
+        .range-header-show {
+            color: #5e5e66;
+            font-size: 26px;
+        }
+    }
+    /* elements */
+    .range-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: calc(100% - 48px);
+        height: $range-slider-size;
+        box-sizing: border-box;
+        margin: 0 24px;
+    }
+
+    .range-rail {
+        width: 100%;
+        height: $range-rail-height;
+        background-color: $range-rail-bg-color;
+        box-sizing: border-box;
+        overflow: hidden;
+        border-radius: $range-rail-height;
+    }
+
+    .range-track {
+        position: absolute;
+        height: $range-rail-height;
+        background-color: $range-track-bg-color;
+    }
+
+    .range-slider {
+        position: absolute;
+        margin-left: -$range-slider-size / 2;
+        width: $range-slider-size;
+        height: $range-slider-size;
+        border-radius: 50%;
+        background-color: $range-slider-color;
+        box-shadow: $range-slider-shadow;
+        box-sizing: border-box;
+    }
+    .slider-img {
+        width: 44px;
+        height: 44px;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, .15);
+        border-radius: 100%;
+    }
+
+    .range-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 8px;
+        .range-footer-item {
+            width: 48px;
+            text-align: center;
+            font-size: 24px;
+            color: #8d8e99;
+        }
+    }
+}
+

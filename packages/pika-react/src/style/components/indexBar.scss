@@ -1,0 +1,84 @@
+.pkIndexBar {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    &__content {
+        width: 100%;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    &__menu {
+        position: fixed;
+        top: 50%;
+        right: 16px;
+        overflow: hidden;
+        transform: translate3d(0, -50%, 0);
+        z-index: 100;
+    }
+
+    &__menu-item {
+        padding: 6px 0;
+        color: $color-black-1;
+        font-size: 26px;
+        text-align: center;
+        line-height: 1;
+        &.active {
+            color: red;
+        }
+    }
+
+    &__body {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+    &__list {
+        position: relative;
+        top: 0;
+        width: 100%;
+        box-sizing: border-box;
+        //overflow: hidden;
+    }
+
+    &__list-title {
+        padding: $space-big $space-normal $space-big $space-normal;
+        width: 100%;
+        color: $color-black-0;
+        font-size: 28px;
+        background-color: $color-grey-4;
+        box-sizing: border-box;
+        overflow: hidden;
+        .sticky {
+            position: sticky;
+            top: 0;
+        }
+    }
+
+    &__list-content {
+        &-item {
+            box-sizing: border-box;
+            padding: 0 $space-normal;
+            height: 129px;
+            line-height: 129px;
+            font-size: 32px;
+            background-color: $color-grey-5;
+            border-bottom: 1px solid $color-grey-3;
+        }
+    }
+
+    // override
+    .pk-toast {
+        .container {
+            width: 240px;
+            height: 240px;
+            border-radius: 24px;
+            .text {
+                font-size: 72px;
+            }
+        }
+    }
+}

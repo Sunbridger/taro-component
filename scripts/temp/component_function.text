@@ -1,0 +1,8 @@
+import React from 'react';
+// import Taro from '@tarojs/taro';
+import { View } from "@tarojs/components";
+import { I_componentName_Props } from './interface.d';
+
+export default function So_ComponentName_(props: I_componentName_Props) {
+    return <View className='So_ComponentName_'>So_ComponentName_ show</View>
+}

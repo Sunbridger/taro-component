@@ -1,0 +1,10 @@
+node_modules/
+
+.vscode
+.idea
+
+packages/**/dist/
+packages/pika-react/lib/
+packages/pika-demo-vue/
+
+packages/pika-react/src/components/uploader/lib/*.js

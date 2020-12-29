@@ -1,0 +1,212 @@
+$hd: 2 !default; // 基本单位
+
+//主题色
+$color-main-tt: #ffc400 !default; // 弹个车主题色
+$color-aux-tt: #ffa700 !default; // 弹个车辅助色
+$color-main-jx: #f01d24 !default; // 家选主题色
+$color-aux-jx: #dbb76c !default; // 家选辅助色
+$color-main-cn: #ff1c24 !default; // 车牛主题色
+$color-aux-cn: #efc71c !default; // 车牛辅助色
+
+$color-theme-main: $color-main-jx !default; // 当前选用的主题色
+
+// 功能颜色
+$color-success: #1dbf6e !default;
+$color-error: #f01d24 !default;
+$color-warn: #ffaf00 !default;
+$color-info: #2c7ff7 !default;
+
+// 红色系
+$color-red-4: #f78e91 !default;
+$color-red-5: #fef2f2 !default;
+
+// 黑色系
+$color-black-0: #000 !default;
+$color-black-1: #5e5e66 !default;
+$color-black-2: #666666 !default;
+$color-black-3: rgba(#000, 0.6) !default; // for mask
+$color-black-4: rgba(#000, 0.1) !default; // for mask
+
+// 灰色系
+$color-grey-0: #8d8e99 !default;
+$color-grey-1: #b0b1b8 !default;
+$color-grey-2: #e3e3e6 !default;
+$color-grey-3: #ededf0 !default;
+$color-grey-4: #f7f8fa !default;
+$color-grey-5: #ffffff !default;
+
+// 白色系
+$color-white: #fff !default;
+
+/* 透明度 */
+$opacity-active: 0.6 !default; // Button 等组件点击态额透明度
+$opacity-disabled: 0.3 !default; // Button 等组件禁用态的透明度
+
+// 字体大小
+$font-size-xs: 20px !default;
+$font-size-s: 24px !default;
+$font-size-m: 26px !default;
+$font-size-l: 28px !default;
+$font-size-xl: 32px !default;
+$font-size-xxl: 36px !default;
+$font-size-big: 40px !default;
+$font-size-super: 48px !default;
+
+// 字重
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semiBold: 600;
+
+// 行高
+$line-height-xs: lineHeight($font-size-xs) !default;
+$line-height-sm: lineHeight($font-size-s) !default;
+$line-height-base: lineHeight($font-size-m) !default;
+$line-height-lg: lineHeight($font-size-l) !default;
+$line-height-xl: lineHeight($font-size-xl) !default;
+$line-height-xxl: lineHeight($font-size-xxl) !default;
+$line-height-big: lineHeight($font-size-big) !default;
+$line-height-super: lineHeight($font-size-super) !default;
+
+// 边距
+$space-base: $hd * 4px !default; // 8
+$space-min: $space-base * 2 !default; // 16
+$space-xm: 20px !default; //20
+$space-small: $space-base * 3 !default; // 24
+$space-normal: $space-base * 4 !default; //32
+$space-md: 36px !default; //36
+$space-big: $space-base * 5 !default; // 40
+$space-large: $space-base * 6 !default; // 48
+$space-max: $space-base * 7 !default; // 56
+
+// 圆角
+$border-radius-sm: 2px * $hd !default; // 4
+$border-radius-md: 4px * $hd !default; // 8
+$border-radius-lg: 6px * $hd !default; // 12
+$border-radius-xl: 8px * $hd !default; // 16
+$border-radius-sp: 12px * $hd !default; // 24
+$border-radius-circle: 50% !default; // 半圆角
+
+// 阴影
+$shadow-shallow: 0px -2px 16px rgba(0, 0, 0, 0.08) !default;
+$shadow-deep: 0px 16px 48px rgba(0, 0, 0, 0.04) !default;
+$shadow-other: 0px 0px 24px rgba(0, 0, 0, 0.06) !default;
+
+// ios底部间距
+$window-bottom-ios-normal: 20px !default;
+$window-bottom-ios-fullScreen: 40px !default;
+
+// z-index
+$zIndex-modal: getZIndex('modal') !default;
+$zIndex-overlay: getZIndex('overlay') !default;
+$zIndex-fab: getZIndex('fab') !default;
+$zIndex-popup: getZIndex('popup') !default;
+$zIndex-divider: 100 !default;
+$zIndex-steps: 500 !default;
+$zIndex-tab: 600 !default;
+$zIndex-form: 700 !default;
+$zIndex-nav: 800 !default;
+$zIndex-search-bar: 800 !default;
+$zIndex-indexes: 805 !default;
+$zIndex-toast: getZIndex('toast') !default;
+$zIndex-dialog: getZIndex('dialog') !default;
+
+/**
+ * 组件变量
+ */
+
+/* Avatar */
+$pk-avatar-color: $color-grey-5 !default;
+$pk-avatar-bg-color: $color-grey-3 !default;
+$pk-avatar-size-sm: 64px !default;
+$pk-avatar-size-md: 80px !default;
+$pk-avatar-size-lg: 96px !default;
+
+/* Input */
+$pk-form-input-height: 105px !default;
+$pk-input-label-color: $color-black-0 !default;
+$pk-input-text-color: $color-black-0 !default;
+$pk-input-font-size: $font-size-l !default;
+$pk-input-placeholder-color: $color-grey-3 !default;
+
+/* normal */
+$pk-common-padding-normal: 36px 32px !default;
+
+/* badge */
+$pk-badge-height: 36px;
+$pk-badge-dot-size: 16px !default;
+$pk-badge-bg: #ff0000 !default;
+$pk-badge-color: #fff !default;
+$pk-badge-font-size: $font-size-s !default;
+$pk-badge-border: 2px solid #fff !default;
+$pk-badge-border-radius: $pk-badge-height / 2 !default;
+
+/* searchBar */
+$pk-search-bar-btn-color: $color-grey-5 !default;
+$pk-search-bar-btn-bg-color: $color-black-0 !default;
+
+/* list */
+$pk-list-title-line-height: 45px !default;
+$pk-list-note-line-height: 24px !default;
+$pk-list-text-color: $color-black-0 !default;
+$pk-list-content-color: $color-grey-0 !default;
+$pk-list-extra-color: $color-black-0 !default;
+$pk-list-arrow-color: $color-grey-1 !default;
+$pk-list-thumb-size: 40px !default;
+$pk-list-extra-width: 235px !default;
+
+/* Checkbox */
+$pk-checkbox-circle-size: 40px !default;
+$pk-checkbox-icon-size: $font-size-s !default;
+$pk-checkbox-icon-color: $color-black-0 !default;
+$pk-checkbox-icon-color-checked: $color-grey-5 !default;
+$pk-checkbox-title-color: $color-black-0 !default;
+$pk-checkbox-title-font-size: $font-size-l !default;
+$pk-checkbox-desc-font-size: $font-size-s !default;
+$pk-checkbox-desc-color: $color-grey-2 !default;
+
+/*steps*/
+$pk-steps-color: #999 !default;
+$pk-steps-color-active: #fff !default;
+$pk-steps-bg-color: #fff !default;
+$pk-steps-border-color: #f7f8fa !default;
+$pk-steps-bg-color-success: $color-theme-main !default;
+$pk-steps-bg-color-disabled: #f2f3f5 !default;
+$pk-steps-line-color: #e3e4e6 !default;
+$pk-steps-line-color-active: $color-theme-main !default;
+$pk-steps-title-color: #000 !default;
+$pk-steps-desc-color: #ccc !default;
+
+/* Radio */
+$pk-radio-title-color: $color-black-0 !default;
+$pk-radio-title-size: $font-size-xl !default;
+$pk-radio-label-size: $font-size-xl !default;
+$pk-radio-desc-color: $color-grey-2 !default;
+$pk-radio-desc-size: $font-size-s !default;
+$pk-radio-check-color: $color-main-jx !default;
+
+/* ImagePicker */
+$pk-image-picker-btn-add-color: $color-grey-3 !default;
+$pk-image-picker-btn-remove-color: $color-grey-5 !default;
+$pk-image-picker-btn-remove-bg-color: $color-grey-2 !default;
+
+/* tag */
+$pk-tag-height: 72px !default;
+$pk-tag-height-sm: 56px !default;
+$pk-tag-color: #000 !default;
+$pk-tag-color-primary: $color-theme-main !default;
+$pk-tag-font-size: 24px !default;
+$pk-tag-font-size-sm: 24px !default;
+$pk-tag-bg-color: $color-grey-4 !default;
+$pk-tag-bg-color-primary: $color-red-5 !default;
+$pk-tag-border-color: $pk-tag-bg-color !default;
+$pk-tag-border-color-primary: #f78e91 !default;
+
+/* button */
+$pk-button-secondary-background-color: #f2f3f5 !default;
+$pk-button-primary-pressed: #cc161c !default;
+
+/* fab */
+$px-fab-box-shadow: 0 14px 16px 0 rgba(13, 14, 26, 0.1) !default;
+
+/* toast */
+$pk-toast-background-color: rgba($color-black-0, 0.9) !default;

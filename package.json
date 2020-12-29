@@ -1,0 +1,80 @@
+{
+    "name": "souche-taro-components",
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
+    "description": "UI KIT for souche Taro",
+    "scripts": {
+        "commit": "git-cz",
+        "clean": "./node_modules/.bin/lerna clean",
+        "bootstrap": "./node_modules/.bin/lerna bootstrap",
+        "build": "./node_modules/.bin/lerna run --stream --sort build",
+        "ver-auto": "./node_modules/.bin/lerna version --conventional-commits",
+        "ver-self": "./node_modules/.bin/lerna version",
+        "publish": "node ./scripts/publish.js",
+        "new-react": "node scripts/new-react.js",
+        "new-vue": "node scripts/new-vue.js",
+        "dev:react-ui": "./node_modules/.bin/lerna run dev --scope=@souche/pika-react --stream",
+        "dev:react-demo": "./node_modules/.bin/lerna run dev --scope=@souche/pika-demo-react --stream",
+        "dev:vue-ui": "./node_modules/.bin/lerna run dev --scope=@souche/pika-vue --stream",
+        "dev:vue-demo": "./node_modules/.bin/lerna run dev --scope=@souche/pika-demo-vue --stream",
+        "dev:react": "yarn dev:react-demo",
+        "dev:vue": "yarn dev:vue-ui & yarn dev:vue-demo",
+        "dev:docs": "./node_modules/.bin/lerna run dev --scope=@souche/pika-doc --stream",
+        "docs:vue": "./node_modules/.bin/lerna run dev:h5 --scope=@souche/pika-demo-vue --stream & yarn dev:docs & yarn dev:vue-ui",
+        "docs:react": "./node_modules/.bin/lerna run dev:h5 --scope=@souche/pika-demo-react --stream & yarn dev:docs",
+        "build:docs": "./node_modules/.bin/lerna run build  --scope=@souche/pika-doc --stream"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-lerna-changelog"
+        }
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged",
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        }
+    },
+    "lint-staged": {
+        "*.{js,jsx,ts,tsx,vue}": "eslint --quiet --cache --fix",
+        "src/**/*.scss": "stylelint --syntax scss --fix"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^8.3.5",
+        "@commitlint/config-conventional": "^8.3.4",
+        "@typescript-eslint/eslint-plugin": "^2.26.0",
+        "@typescript-eslint/parser": "^2.26.0",
+        "babel-eslint": "^10.1.0",
+        "cache-loader": "^4.1.0",
+        "chalk": "^4.1.0",
+        "commitizen": "^4.1.2",
+        "conventional-changelog-cli": "^2.0.31",
+        "cross-env": "^7.0.2",
+        "cz-lerna-changelog": "^2.0.3",
+        "eslint": "^6.8.0",
+        "eslint-config-o2team": "^0.1.7",
+        "eslint-config-prettier": "^6.10.1",
+        "eslint-import-resolver-custom-alias": "^1.2.0",
+        "eslint-plugin-import": "^2.20.2",
+        "eslint-plugin-prettier": "^3.1.2",
+        "eslint-plugin-react": "^7.19.0",
+        "eslint-plugin-react-hooks": "^3.0.0",
+        "eslint-plugin-vue": "^7.0.0-beta.1",
+        "execa": "^4.0.3",
+        "fs-extra": "^9.0.1",
+        "husky": "^4.2.3",
+        "inquirer": "^7.3.3",
+        "lerna": "^3.22.1",
+        "lint-staged": "^10.1.2",
+        "ora": "^5.0.0",
+        "prettier": "^2.0.3",
+        "rimraf": "^3.0.2",
+        "stylelint": "^13.3.0",
+        "stylelint-config-standard": "^20.0.0",
+        "stylelint-scss": "^3.16.0",
+        "typescript": "~3.7.2",
+        "vue-eslint-parser": "^7.1.0"
+    }
+}
